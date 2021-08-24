@@ -4,7 +4,7 @@
     "description": "Schema of an EBSI Verifiable Presentation",
     "type": "object",
     "properties": {
-        "context": {
+        "@context": {
             "description": "Defines semantic context of the Verifiable Presentation",
             "type": "array",
             "items": {
@@ -72,7 +72,7 @@
         }
     },
     "required": [
-        "context",
+        "@context",
         "type",
         "holder",
         "verifiableCredential",

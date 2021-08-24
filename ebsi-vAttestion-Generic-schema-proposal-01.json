@@ -4,7 +4,7 @@
     "description": "Schema of an EBSI Verifiable Attestation",
     "type": "object",
     "properties": {
-        "context": {
+        "@context": {
             "description": "Defines semantic context of the Verifiable Attestation",
             "type": "array",
             "items": {
@@ -157,7 +157,7 @@
         }
     },
     "required": [
-        "context",
+        "@context",
         "id",
         "type",
         "issuer",
@@ -165,7 +165,6 @@
         "validFrom",
         "credentialSubject",
         "credentialSchema",
-        "credentialStatus",
         "proof"
     ]
 }

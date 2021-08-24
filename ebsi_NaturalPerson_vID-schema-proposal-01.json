@@ -4,7 +4,7 @@
     "description": "Schema of an EBSI Verifiable ID for a natural person",
     "type": "object",
     "properties": {
-        "context": {
+        "@context": {
             "description": "Defines semantic context of the Verifiable ID",
             "type": "array",
             "items": {
@@ -211,7 +211,7 @@
         }
     },
     "required": [
-        "context",
+        "@context",
         "id",
         "type",
         "issuer",
@@ -219,7 +219,6 @@
         "validFrom",
         "credentialSubject",
         "credentialSchema",
-        "credentialStatus",
         "evidence",
         "proof"
     ]

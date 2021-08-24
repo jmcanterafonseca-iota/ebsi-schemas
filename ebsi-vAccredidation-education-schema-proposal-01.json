@@ -223,7 +223,6 @@
         "validFrom",
         "credentialSubject",
         "credentialSchema",
-        "credentialStatus",
         "proof"
     ]
 }
