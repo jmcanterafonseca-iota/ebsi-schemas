@@ -12,10 +12,13 @@
                 "format": "uri"
             }
         },
+
         "id": {
             "description": "Defines unique identifier of the Verifiable Attestation",
-            "type": "string"
+            "type": "string",
+            "format": "uri"
         },
+
         "type": {
             "description": "Defines the Verifiable Credential type",
             "type": "array",
@@ -23,36 +26,51 @@
                 "type": "string"
             }
         },
+
         "issuer": {
             "description": "Defines the issuer of the Verifiable Attestation",
-            "type": "string"
+            "type": "string",
+            "format": "uri"
         },
+
         "issuanceDate": {
             "description": "Defines when the Verifiable Attestation was issued",
             "type": "string",
             "format": "date-time"
         },
+
         "validFrom": {
             "description": "Defines the date and time, when the Verifiable Attestation becomes valid",
             "type": "string",
             "format": "date-time"
         },
+
         "expirationDate": {
             "description": "Defines the date and time, when the Verifiable Attestation expires",
             "type": "string",
             "format": "date-time"
         },
+
         "credentialSubject": {
             "description": "Defines information about the subject that is described by the Verifiable Attestation",
-            "type": "object"
+            "type": "object",
+            "properties": {
+                "id": {
+                    "description": "Defines the DID of the subject that is described by the Verifiable Attestation",
+                    "type": "string",
+                    "format": "uri"
+                }
+            }
         },
+
         "credentialStatus": {
             "description": "Contains information about how to verify the status of the Verifiable Attestation (via the Revocation and Endorsement Registry, RER)",
             "type": "object",
             "properties": {
                 "id": {
                     "description": "References record in the Revocation and Endorsement Registry (RER) to enable verification of a Verifiable Attestation’s validity",
-                    "type": "string"
+                    "type": "string",
+                    "format": "uri"
                 },
                 "type": {
                     "description": "Defines the Verifiable Credential status type",
@@ -64,19 +82,23 @@
                 "type"
             ]
         },
+
         "credentialSchema": {
-            "description": "Contains information about the credential schema (template) on which the Verifiable Attestation is based",
+            "description": "Contains information about the credential schema (template) on which the Verifiable Authorisation is based",
             "type": "object",
             "properties": {
-                "id": {
-                    "description": "References the credential schema (template) stored on the (relevant) Trusted Schemas Registry (TSR) on which the Verifiable Attestation is based",
-                    "type": "string"
-                },
-                "type": {
-                    "description": "Defines credential schema type",
-                    "type": "string"
-                }
+                    "id": {
+                            "description": "References the credential schema (template) stored on the (relevant) Trusted Schemas Registry (TSR) on which the Verifiable Authorisation is based",
+                            "type": "string",
+                            "format": "uri"
+                    },
+                    "type": {
+                            "description": "Defines credential schema type",
+                            "type": "string",
+                            "enum": ["FullJsonSchemaValidator2021"]
+                    }
             },
+
             "required": [
                 "id",
                 "type"
@@ -119,7 +141,14 @@
                         "type": "string"
                     }
                 }
-            }
+            },
+            "required": [
+                "type",
+                "verifier",
+                "evidenceDocument",
+                "subjectPresence",
+                "documentPresence"
+            ]
         },
         "proof": {
             "description": "Contains information about the proof",
@@ -164,7 +193,6 @@
         "issuanceDate",
         "validFrom",
         "credentialSubject",
-        "credentialSchema",
-        "proof"
+        "credentialSchema"
     ]
 }

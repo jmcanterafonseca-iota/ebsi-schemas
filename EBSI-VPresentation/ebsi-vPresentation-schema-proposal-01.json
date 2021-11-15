@@ -25,7 +25,10 @@
         },
         "verifiableCredential": {
             "description": "Contains the personal information intended to be shared",
-            "type": "object"
+            "items": {
+                "type": "object"
+            },
+            "type": "array"
         },
         "proof": {
             "description": "Contains information about the proof",
@@ -75,7 +78,6 @@
         "@context",
         "type",
         "holder",
-        "verifiableCredential",
-        "proof"
+        "verifiableCredential"
     ]
 }

@@ -12,14 +12,19 @@
             }
         },
         "credentialSchema": {
+            "description": "Contains information about the credential schema (template) on which the Verifiable Authorisation is based",
             "type": "object",
             "properties": {
-                "id": {
-                    "type": "string"
-                },
-                "type": {
-                    "type": "string"
-                }
+                    "id": {
+                            "description": "References the credential schema (template) stored on the (relevant) Trusted Schemas Registry (TSR) on which the Verifiable Authorisation is based",
+                            "type": "string",
+                            "format": "uri"
+                    },
+                    "type": {
+                            "description": "Defines credential schema type",
+                            "type": "string",
+                            "enum": ["FullJsonSchemaValidator2021"]
+                    }
             },
             "required": [
                 "id",
@@ -235,7 +240,8 @@
             "format": "date-time"
         },
         "id": {
-            "type": "string"
+            "type": "string",
+            "format": "uri"
         },
         "issuanceDate": {
             "type": "string",
