@@ -1,0 +1,8 @@
+{
+  "@context": [
+    "VerifiablePresentation"
+  ],
+  "type": ["VerifiablePresentation"],
+  "holder": "1223123123",
+  "verifiableCredential": [{"123": "123"}, {"123": "123"}]
+}

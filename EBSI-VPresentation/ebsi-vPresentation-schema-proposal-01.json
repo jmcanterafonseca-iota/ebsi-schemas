@@ -25,9 +25,10 @@
         },
         "verifiableCredential": {
             "description": "Contains the personal information intended to be shared",
-            "items": {
-                "type": "object"
-            },
+            "oneOf": [
+                {"items" : {"type": "object"} }
+               ,{"items" : {"type": "string"} }
+            ],
             "type": "array"
         },
         "proof": {
