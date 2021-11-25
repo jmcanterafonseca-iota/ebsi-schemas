@@ -103,7 +103,7 @@
         "type": "object",
         "properties": {
           "id": {
-            "description": "References the issuance policy stored on the (relevant) Trusted Schemas Registry (TSR) that has been followed for issuing the Verifiable Attestation",
+            "description": "If present, it MUST contain a URL that points to where more information about this instance of evidence can be found.",
             "type": "string"
           },
           "type": {
@@ -143,7 +143,8 @@
           "subjectPresence",
           "documentPresence"
         ]
-      },
+      }},
+
       "proof": {
         "description": "Contains information about the proof",
         "type": "object",
@@ -190,4 +191,4 @@
       "credentialSchema"
     ]
   }
-}
+
