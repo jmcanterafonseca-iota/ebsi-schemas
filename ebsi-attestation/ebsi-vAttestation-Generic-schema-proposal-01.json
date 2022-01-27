@@ -137,58 +137,54 @@
           }
         },
         "required": [
-          "type",
-          "verifier",
-          "evidenceDocument",
-          "subjectPresence",
-          "documentPresence"
-        ]
-      }},
-
-      "proof": {
-        "description": "Contains information about the proof",
-        "type": "object",
-        "properties": {
-          "type": {
-            "description": "Defines the proof type",
-            "type": "string"
-          },
-          "proofPurpose": {
-            "description": "Defines the purpose of the proof",
-            "type": "string"
-          },
-          "created": {
-            "description": "Defines the date and time, when the proof has been created",
-            "type": "string",
-            "format": "date-time"
-          },
-          "verificationMethod": {
-            "description": "Contains information about the verification method / proof mechanisms",
-            "type": "string"
-          },
-          "jws": {
-            "description": "Defines the proof value in JWS format",
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "proofPurpose",
-          "created",
-          "verificationMethod",
-          "jws"
+          "type"
         ]
       }
     },
-    "required": [
-      "@context",
-      "id",
-      "type",
-      "issuer",
-      "issuanceDate",
-      "validFrom",
-      "credentialSubject",
-      "credentialSchema"
-    ]
-  }
+    "proof": {
+      "description": "Contains information about the proof",
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "Defines the proof type",
+          "type": "string"
+        },
+        "proofPurpose": {
+          "description": "Defines the purpose of the proof",
+          "type": "string"
+        },
+        "created": {
+          "description": "Defines the date and time, when the proof has been created",
+          "type": "string",
+          "format": "date-time"
+        },
+        "verificationMethod": {
+          "description": "Contains information about the verification method / proof mechanisms",
+          "type": "string"
+        },
+        "jws": {
+          "description": "Defines the proof value in JWS format",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "proofPurpose",
+        "created",
+        "verificationMethod",
+        "jws"
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "id",
+    "type",
+    "issuer",
+    "issuanceDate",
+    "validFrom",
+    "credentialSubject",
+    "credentialSchema"
+  ]
+}
 
