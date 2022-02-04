@@ -1,0 +1,72 @@
+{
+  "private": true,
+  "name": "@cef-ebsi/json-schema",
+  "license": "EUPL-1.2",
+  "version": "1.0.0",
+  "description": "EBSI's JSON Schemas for VC and VP",
+  "type": "module",
+  "scripts": {
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier . --check",
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "prepare": "is-ci || husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://ec.europa.eu/cefdigital/code/scm/ebsi/json-schema.git"
+  },
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
+  "devDependencies": {
+    "@apidevtools/json-schema-ref-parser": "^9.0.9",
+    "ajv": "^8.9.0",
+    "ajv-formats": "^2.1.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "globby": "^13.1.1",
+    "husky": "^7.0.4",
+    "is-ci": "^3.0.1",
+    "jest": "^27.4.7",
+    "lint-staged": "^12.3.3",
+    "prettier": "^2.5.1"
+  },
+  "prettier": {},
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "extends": [
+      "airbnb-base",
+      "plugin:jest/recommended",
+      "plugin:jest/style",
+      "plugin:prettier/recommended"
+    ]
+  },
+  "lint-staged": {
+    "*.{js}": "eslint --fix",
+    "*.{md,json}": "prettier --write"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "rootDir": ".",
+    "roots": [
+      "<rootDir>/schemas/",
+      "<rootDir>/test/"
+    ],
+    "testMatch": [
+      "**/?(*.|*-)+(spec|test).js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+pipeline {
+    agent any
+    stages {
+        stage('Setup') {
+            steps {
+                nodejs(nodeJSInstallationName: '16.13.0') {
+                    sh 'npm i'
+                }
+            }
+        }
+        stage('Lint') {
+            steps {
+                nodejs(nodeJSInstallationName: '16.13.0') {
+                    sh 'npm run lint'
+                }
+            }
+        }
+        stage('Tests') {
+            steps {
+                nodejs(nodeJSInstallationName: '16.13.0') {
+                    sh 'npm test'
+                }
+            }
+        }
+        stage('SonarQube Analysis') {
+            steps {
+                withSonarQubeEnv('LocalSonar'){
+                    sh "/var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar-scanner/bin/sonar-scanner -Dsonar.host.url=https://infra.ebsi.xyz/sonar -Dsonar.projectName=json-schema -Dsonar.projectVersion=1.0 -Dsonar.projectKey=json-schema -Dsonar.sources=. -Dsonar.projectBaseDir=${WORKSPACE}"
+                }
+            }
+        }
+        stage("Quality Gate") {
+            steps {
+                waitForQualityGate abortPipeline: true
+            }
+        }
+    }
+    post {
+        always {
+            cleanWs()
+            dir("${env.WORKSPACE}@script") {
+                deleteDir()
+            }
+        }
+    }
+}
