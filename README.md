@@ -11,6 +11,7 @@
   - [Folder structure](#Folder-structure)
   - [Formatting](#Formatting)
   - [Testing](#Testing)
+- [CLI](#CLI)
 - [License](#License)
 
 ## Contributing
@@ -87,6 +88,57 @@ npm run test test/examples.test.js
 
 # Validate the schemas only
 npm run test test/schemas.test.js
+```
+
+## CLI
+
+The repository comes with a CLI.
+
+First, install the dependencies and link the CLI to make it callable:
+
+```sh
+npm i
+npm link
+```
+
+You can now call `ejsc` (EBSI JSON Schema CLI).
+
+### `compute-id` command
+
+```sh
+# Compute the ID of a specific schema
+# Example: ejsc compute-id schemas/ebsi-attestation/2021-11/schema.json
+ejsc compute-id [path]
+
+# Compute all IDs
+ejsc compute-id --all
+
+# Compute IDs of chosen files (a prompt will appear)
+ejsc compute-id
+```
+
+### `publish` command
+
+```sh
+# Publish a specific schema
+# Example: ejsc publish schemas/ebsi-attestation/2021-11/schema.json
+ejsc publish [path]
+
+# Publish all schemas
+ejsc publish --all
+
+# Publish the chosen schemas (a prompt will appear)
+ejsc publish
+```
+
+Tip: you can create a `.env` file to store your credentials, so you don't have to enter them every time you run the `publish` command.
+
+Example:
+
+```
+EBSI_ENV=pilot
+DID=did:ebsi:z...
+PRIVATE_KEY=0x...
 ```
 
 ## License

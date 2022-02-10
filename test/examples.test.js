@@ -1,8 +1,8 @@
 import { dirname, resolve } from "node:path";
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
-import Ajv2020 from "ajv/dist/2020";
-import Ajv2019 from "ajv/dist/2019";
+import Ajv2020 from "ajv/dist/2020.js";
+import Ajv2019 from "ajv/dist/2019.js";
 import AjvDraft07 from "ajv";
 import addFormats from "ajv-formats";
 import $RefParser from "@apidevtools/json-schema-ref-parser";
