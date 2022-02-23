@@ -9,6 +9,7 @@
     "ejsc": "bin/run.js"
   },
   "scripts": {
+    "format": "prettier . --write",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier . --check",
     "lint": "npm run lint:eslint && npm run lint:prettier",

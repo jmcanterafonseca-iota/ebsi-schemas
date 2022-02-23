@@ -1,4 +1,4 @@
-![EBSI Logo](https://ec.europa.eu/cefdigital/wiki/images/logo/default-space-logo.svg)
+![EBSI Logo](https://ec.europa.eu/digital-building-blocks/wikis/images/logo/default-space-logo.svg)
 
 # JSON Schemas
 
@@ -18,7 +18,7 @@
 
 When you create a new JSON Schema, make sure to follow the folder structure described below. Moreover, the JSON Schema must pass the [automated tests](#Testing), and comply with our [formatting conventions](#Formatting).
 
-Create a new branch from the `Main` branch, commit your changes, and open a pull request on [Bitbucket](https://ec.europa.eu/cefdigital/code/projects/EBSI/repos/json-schema/browse).
+Create a new branch from the `main` branch, commit your changes, and open a pull request on [Bitbucket](https://ec.europa.eu/digital-building-blocks/code/projects/EBSI/repos/json-schema/browse).
 
 ### Requirements
 
@@ -64,12 +64,18 @@ There are 2 automated tests:
 
 ### Formatting
 
-We use [Prettier](https://prettier.io/) (an opinionated code formatter) to format the JS and JSON files.
+We use [Prettier](https://prettier.io/) (an opinionated code formatter) to format the JS and JSON files, and [ESLint](https://eslint.org/) to analyze the JS files.
 
-You can run the following command to check if your files comply with Prettier:
+You can run the following command to check if your files comply with Prettier and ESLint:
 
 ```sh
 npm run lint
+```
+
+To format all the files with Prettier, run:
+
+```sh
+npm run format
 ```
 
 ### Testing
