@@ -6,8 +6,9 @@ import AjvDraft07 from "ajv";
 import addFormats from "ajv-formats";
 import $RefParser from "@apidevtools/json-schema-ref-parser";
 import { globbySync } from "globby";
+import { computeId } from "../cli/utils/jsonSchema.js";
 
-// Ignore list
+// Ignore list: these schemas are not valid ("strict": true, https://ajv.js.org/options.html#strict)
 const ignoreList = [
   "schemas/ebsi-muti-uni-pilot/education-verifiable-accreditation-records/2021-12/schema.json",
   "schemas/ebsi-muti-uni-pilot/verifiable-attestation-organisational-id/2021-12/schema.json",
@@ -17,7 +18,7 @@ const ignoreList = [
   "schemas/ebsi-vid/verifiable-authorisation/2021-11/schema.json",
 ];
 
-// Find all schemas
+// Find all schemas (except the broken ones)
 const currentDir = dirname(fileURLToPath(import.meta.url));
 const rootDir = resolve(currentDir, "..");
 const schemas = globbySync(["schemas/**/schema.json"], {
@@ -25,41 +26,42 @@ const schemas = globbySync(["schemas/**/schema.json"], {
   ignore: ignoreList,
 });
 
-describe("Schemas validation", () => {
-  test.each(schemas)(
-    "AJV should compile %s without errors",
-    async (schemaFile) => {
-      // Bundle schema
-      const bundledSchema = await $RefParser.bundle(
-        resolve(rootDir, schemaFile)
-      );
+describe.each(schemas)("Schema %s", (schemaFile) => {
+  test("should compile without errors (using Ajv)", async () => {
+    // Bundle schema
+    const bundledSchema = await $RefParser.bundle(resolve(rootDir, schemaFile));
 
-      // Configure Ajv
-      let ajv;
-      switch (bundledSchema.$schema) {
-        // https://github.com/json-schema-org/json-schema-spec/blob/2020-12/schema.json
-        case "https://json-schema.org/draft/2020-12/schema": {
-          ajv = new Ajv2020({ allErrors: true, strict: true });
-          break;
-        }
-        // https://github.com/json-schema-org/json-schema-spec/blob/2019-09/schema.json
-        case "https://json-schema.org/draft/2019-09/schema": {
-          ajv = new Ajv2019({ allErrors: true, strict: true });
-          break;
-        }
-        // https://github.com/json-schema-org/json-schema-spec/blob/draft-07/schema.json
-        case "http://json-schema.org/draft-07/schema#": {
-          ajv = new AjvDraft07({ allErrors: true, strict: true });
-          break;
-        }
-        default: {
-          throw new Error(`Unknown version "${bundledSchema.$schema}"`);
-        }
+    // Configure Ajv
+    let ajv;
+    switch (bundledSchema.$schema) {
+      // https://github.com/json-schema-org/json-schema-spec/blob/2020-12/schema.json
+      case "https://json-schema.org/draft/2020-12/schema": {
+        ajv = new Ajv2020({ allErrors: true, strict: true });
+        break;
       }
-      addFormats(ajv);
-
-      // Should compile without errors
-      expect(ajv.compile(bundledSchema)).not.toThrow();
+      // https://github.com/json-schema-org/json-schema-spec/blob/2019-09/schema.json
+      case "https://json-schema.org/draft/2019-09/schema": {
+        ajv = new Ajv2019({ allErrors: true, strict: true });
+        break;
+      }
+      // https://github.com/json-schema-org/json-schema-spec/blob/draft-07/schema.json
+      case "http://json-schema.org/draft-07/schema#": {
+        ajv = new AjvDraft07({ allErrors: true, strict: true });
+        break;
+      }
+      default: {
+        throw new Error(`Unknown version "${bundledSchema.$schema}"`);
+      }
     }
-  );
+    addFormats(ajv);
+
+    // Should compile without errors
+    expect(ajv.compile(bundledSchema)).not.toThrow();
+  });
+
+  test("should not contain breaking changes", async () => {
+    // If the schema ID changes, it means there is a breaking change
+    const id = await computeId(schemaFile);
+    expect(id).toMatchSnapshot();
+  });
 });

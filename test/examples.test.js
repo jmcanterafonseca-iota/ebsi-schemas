@@ -30,44 +30,40 @@ matches.forEach((exampleFile) => {
   });
 });
 
-describe("Examples validation", () => {
-  test.each(examples)(
-    "$exampleFile should be valid",
-    async ({ exampleFile, schemaFile }) => {
-      // Bundle schema
-      const bundledSchema = await $RefParser.bundle(schemaFile);
+test.each(examples)(
+  "Example $exampleFile should be valid",
+  async ({ exampleFile, schemaFile }) => {
+    // Bundle schema
+    const bundledSchema = await $RefParser.bundle(schemaFile);
 
-      // Configure Ajv
-      let ajv;
-      switch (bundledSchema.$schema) {
-        case "https://json-schema.org/draft/2020-12/schema": {
-          ajv = new Ajv2020({ allErrors: true });
-          break;
-        }
-        case "https://json-schema.org/draft/2019-09/schema": {
-          ajv = new Ajv2019({ allErrors: true });
-          break;
-        }
-        case "http://json-schema.org/draft-07/schema#": {
-          ajv = new AjvDraft07({ allErrors: true });
-          break;
-        }
-        default: {
-          throw new Error(`Unknown version "${bundledSchema.$schema}"`);
-        }
+    // Configure Ajv
+    let ajv;
+    switch (bundledSchema.$schema) {
+      case "https://json-schema.org/draft/2020-12/schema": {
+        ajv = new Ajv2020({ allErrors: true });
+        break;
       }
-      addFormats(ajv);
-
-      // Validate example
-      const validate = ajv.compile(bundledSchema);
-      const exampleData = JSON.parse(
-        readFileSync(resolve(rootDir, exampleFile))
-      );
-      const valid = validate(exampleData);
-
-      // Check results
-      expect(validate.errors).toBeNull();
-      expect(valid).toBe(true);
+      case "https://json-schema.org/draft/2019-09/schema": {
+        ajv = new Ajv2019({ allErrors: true });
+        break;
+      }
+      case "http://json-schema.org/draft-07/schema#": {
+        ajv = new AjvDraft07({ allErrors: true });
+        break;
+      }
+      default: {
+        throw new Error(`Unknown version "${bundledSchema.$schema}"`);
+      }
     }
-  );
-});
+    addFormats(ajv);
+
+    // Validate example
+    const validate = ajv.compile(bundledSchema);
+    const exampleData = JSON.parse(readFileSync(resolve(rootDir, exampleFile)));
+    const valid = validate(exampleData);
+
+    // Check results
+    expect(validate.errors).toBeNull();
+    expect(valid).toBe(true);
+  }
+);

@@ -4,6 +4,12 @@
 
 ## Changes
 
+### 2022-03
+
+- Changed `$schema` to `draft-07`.
+- Updated EBSI Attestation schema to `2022-02`.
+- Used the schema shared on [https://ec.europa.eu/digital-building-blocks/tracker/browse/EBSISD-1467](EBSISD-1467)
+
 ### 2021-11
 
 Initial schema.

@@ -4,6 +4,12 @@
 
 ## Changes
 
+### 2022-03
+
+- Changed `$schema` to `draft-07`.
+- Updated EBSI Attestation schema to `2022-02`.
+- Fixed typo and `required` definition.
+
 ### 2021-12
 
 Initial schema.
@@ -11,3 +17,4 @@ Initial schema.
 Known issues:
 
 - the schema can't be compiled with Ajv. Error: `data/allOf/1/properties/required must be object,boolean,`
+- the definitions contain a typo (`schemeD` instead of `schemeID`)

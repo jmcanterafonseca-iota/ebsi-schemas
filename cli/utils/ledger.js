@@ -114,22 +114,12 @@ export async function publishSchema({
   const serializedMetadataBuffer = Buffer.from(serializedMetadata);
 
   const wallet = new ethers.Wallet(privateKey);
-  let params;
-  if (method === "insertSchema") {
-    params = {
-      from: wallet.address,
-      schemaId,
-      schema: `0x${serializedSchemaBuffer.toString("hex")}`,
-      metadata: `0x${serializedMetadataBuffer.toString("hex")}`,
-    };
-  } else {
-    params = {
-      from: wallet.address,
-      schemaId,
-      schema: `0x${serializedSchemaBuffer.toString("hex")}`,
-      metadata: `0x${serializedMetadataBuffer.toString("hex")}`,
-    };
-  }
+  const params = {
+    from: wallet.address,
+    schemaId,
+    schema: `0x${serializedSchemaBuffer.toString("hex")}`,
+    metadata: `0x${serializedMetadataBuffer.toString("hex")}`,
+  };
 
   task.title = "Preparing request...";
 

@@ -45,7 +45,7 @@ Each JSON Schema lives in its own folder. For example, the EBSI Verifiable Attes
 In each schema folder, we can find:
 
 - a `README.md` file, which briefly describes the JSON Schema, and links to relevant documentation pages. More importantly, this README also shows the changes between the different versions of the schema.
-- 1 subfolder per version. These folders are named `2021-11`, `2022-02`, etc. It basically follows the naming logic of the JSON Schema specs. We name the subfolder after the date of the merge to the `Main` branch. For example, if we merge a pull request in March 2022, we name the folder `2022-03`.
+- 1 subfolder per version. These folders are named `YYYY-MM(_VV)`. Examples: `2021-11`, `2022-02`, `2022-02_01`, etc. Year (YYYY) and month (MM) of publication are mandatory, while a version number (VV) can be added if multiple versions of the schema are published during a specific month. The date of "publication" corresponds to the date of the merge to the `main` branch. For example, if we merge a pull request in March 2022, we name the folder `2022-03`. If we need to publish a new version of the schema during the same month, we add version number (`_01`, `_02`, etc.).
 
 In a schema version subfolder (e.g. `2021-11`), we store:
 
