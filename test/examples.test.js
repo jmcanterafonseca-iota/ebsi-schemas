@@ -44,7 +44,7 @@ describe("Examples validation", () => {
           ajv = new Ajv2020({ allErrors: true });
           break;
         }
-        case "http://json-schema.org/draft/2019-09/schema": {
+        case "https://json-schema.org/draft/2019-09/schema": {
           ajv = new Ajv2019({ allErrors: true });
           break;
         }
