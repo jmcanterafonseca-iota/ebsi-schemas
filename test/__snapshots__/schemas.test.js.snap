@@ -4,6 +4,8 @@ exports[`Schema schemas/ebsi-accreditation/2022-01/schema.json should not contai
 
 exports[`Schema schemas/ebsi-accreditation/2022-02/schema.json should not contain breaking changes 1`] = `"0xb9d2c90ac8041379fd5d682faf4350e74453f89b064f7702d5c9a71e37d7efe8"`;
 
+exports[`Schema schemas/ebsi-accreditation/2022-03/schema.json should not contain breaking changes 1`] = `"0x9c26d19032deb5d72f4ac56f3b88c4025c6be8123c244fe57a7d6e5343b71b65"`;
+
 exports[`Schema schemas/ebsi-attestation/2021-11/schema.json should not contain breaking changes 1`] = `"0x7f6c312ff3f7da74376304ac580abc6425e8dfa6009933c8360883049e4e0980"`;
 
 exports[`Schema schemas/ebsi-attestation/2022-02/schema.json should not contain breaking changes 1`] = `"0x28d76954924d1c4747a4f1f9e3e9edc9ca965efbf8ff20e4339c2bf2323a5773"`;
