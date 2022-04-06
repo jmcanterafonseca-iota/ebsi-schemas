@@ -22,11 +22,12 @@
     "achieved": [
       {
         "id": "urn:epass:learningAchievement:1",
-        "title": "Higher  Education Entrance Qualification - German International ABITUR School",
+        "title": "Higher Education Entrance Qualification - German International ABITUR School",
+        "definition": "Here you can add the type of qualification provided by specific HEI which uses this certification",
         "wasDerivedFrom": [
           {
             "id": "urn:epass:assessment:1",
-            "title": "Overall Qualification Q+A ",
+            "title": "Overall Qualification Q+A",
             "additionalNote": [
               "overallPointsof36semesters 456 + overallPointsoffinalExamination 123 = totalPointsofQualification 579"
             ],
@@ -43,14 +44,14 @@
             "hasPart": [
               {
                 "id": "urn:epass:assessment:2",
-                "title": " Qualification Phase (Q) results",
+                "title": "Qualification Phase (Q) results",
                 "additionalNote": ["overallPointsof36semesters 456"],
                 "grade": "456"
               },
               {
                 "id": "urn:epass:assessment:3",
                 "title": "Final Examination results (A)",
-                "additionalNote": [" overallPointsoffinalExamination 123"],
+                "additionalNote": ["overallPointsoffinalExamination 123"],
                 "grade": "123"
               }
             ]
@@ -61,8 +62,9 @@
             {
               "id": "achievement:ID",
               "title": "German",
+              "definition": "Individual results achieved during the Qualilification phase Q",
               "additionalNote": [
-                " ISCED 0232: Literature and linguistics. Currently no specific code for native language(?) (Aktuell kein spezifischer code für Muttersprache(?))"
+                "ISCED 0232: Literature and linguistics. Currently no specific code for native language(?) (Aktuell kein spezifischer code für Muttersprache(?))"
               ],
               "wasDerivedFrom": [
                 {
@@ -94,8 +96,9 @@
             {
               "id": "achievement:ID2",
               "title": "English",
+              "definition": "Individual results achieved during the Qualilification phase Q",
               "additionalNote": [
-                " ISCED 0232: Literature and linguistics. Currently no specific code for native language(?) (Aktuell kein spezifischer code für Muttersprache(?))"
+                "ISCED 0232: Literature and linguistics. Currently no specific code for native language(?) (Aktuell kein spezifischer code für Muttersprache(?))"
               ],
               "wasDerivedFrom": [
                 {
@@ -127,8 +130,9 @@
             {
               "id": "achievement:ID3",
               "title": "Art",
+              "definition": "Individual results achieved during the Qualilification phase Q",
               "additionalNote": [
-                " ISCED 0232: Literature and linguistics. Currently no specific code for native language(?) (Aktuell kein spezifischer code für Muttersprache(?))"
+                "ISCED 0232: Literature and linguistics. Currently no specific code for native language(?) (Aktuell kein spezifischer code für Muttersprache(?))"
               ],
               "wasDerivedFrom": [
                 {
@@ -160,8 +164,9 @@
             {
               "id": "achievement:ID4",
               "title": "History",
+              "definition": "Individual results achieved during the Qualilification phase Q",
               "additionalNote": [
-                " ISCED 0232: Literature and linguistics. Currently no specific code for native language(?) (Aktuell kein spezifischer code für Muttersprache(?))"
+                "ISCED 0232: Literature and linguistics. Currently no specific code for native language(?) (Aktuell kein spezifischer code für Muttersprache(?))"
               ],
               "wasDerivedFrom": [
                 {
@@ -193,8 +198,9 @@
             {
               "id": "achievement:ID5",
               "title": "Religion",
+              "definition": "Individual results achieved during the Qualilification phase Q",
               "additionalNote": [
-                " ISCED 0232: Literature and linguistics. Currently no specific code for native language(?) (Aktuell kein spezifischer code für Muttersprache(?))"
+                "ISCED 0232: Literature and linguistics. Currently no specific code for native language(?) (Aktuell kein spezifischer code für Muttersprache(?))"
               ],
               "wasDerivedFrom": [
                 {
@@ -226,8 +232,9 @@
             {
               "id": "achievement:ID6",
               "title": "Mathematics",
+              "definition": "Individual results achieved during the Qualilification phase Q",
               "additionalNote": [
-                " ISCED 0500 - Natural sciences, mathematics and statisticsn.f.d. "
+                "ISCED 0500 - Natural sciences, mathematics and statisticsn.f.d."
               ],
               "wasDerivedFrom": [
                 {
@@ -259,8 +266,9 @@
             {
               "id": "achievement:ID7",
               "title": "Physics",
+              "definition": "Individual results achieved during the Qualilification phase Q",
               "additionalNote": [
-                " ISCED 0500 - Natural sciences, mathematics and statisticsn.f.d. "
+                "ISCED 0500 - Natural sciences, mathematics and statisticsn.f.d."
               ],
               "wasDerivedFrom": [
                 {
@@ -292,8 +300,9 @@
             {
               "id": "achievement:ID8",
               "title": "Biology",
+              "definition": "Individual results achieved during the Qualilification phase Q",
               "additionalNote": [
-                " ISCED 0500 - Natural sciences, mathematics and statisticsn.f.d. "
+                "ISCED 0500 - Natural sciences, mathematics and statisticsn.f.d."
               ],
               "wasDerivedFrom": [
                 {
@@ -325,7 +334,7 @@
             {
               "id": "achievement:ID9",
               "title": "Chemestry",
-              "additionalNote": [" ISCED 00531 - Chemistry"],
+              "additionalNote": ["ISCED 00531 - Chemistry"],
               "wasDerivedFrom": [
                 {
                   "id": "urn:assessment:ID19",
@@ -344,8 +353,9 @@
             {
               "id": "achievement:ID10",
               "title": "Physical Education",
+              "definition": "Individual results achieved during the Qualilification phase Q",
               "additionalNote": [
-                " ISCED 0500 - Natural sciences, mathematics and statisticsn.f.d. "
+                "ISCED 0500 - Natural sciences, mathematics and statisticsn.f.d."
               ],
               "wasDerivedFrom": [
                 {
@@ -377,13 +387,14 @@
             {
               "id": "achievement:ID11",
               "title": "Mathematics",
+              "definition": "Results in the final examination A",
               "additionalNote": [
-                " ISCED 0500 - Natural sciences, mathematics and statisticsn.f.d. "
+                "ISCED 0500 - Natural sciences, mathematics and statisticsn.f.d."
               ],
               "wasDerivedFrom": [
                 {
                   "id": "urn:assessment:ID111",
-                  "title": "Mathematics written examen ",
+                  "title": "Mathematics written examen",
                   "grade": "14",
                   "issuedDate": "2020-06-22"
                 },
@@ -398,13 +409,14 @@
             {
               "id": "achievement:ID12",
               "title": "Physics",
+              "definition": "Results in the final examination A",
               "additionalNote": [
-                " ISCED 0500 - Natural sciences, mathematics and statisticsn.f.d. "
+                "ISCED 0500 - Natural sciences, mathematics and statisticsn.f.d."
               ],
               "wasDerivedFrom": [
                 {
                   "id": "urn:assessment:ID112",
-                  "title": "Physics written examen ",
+                  "title": "Physics written examen",
                   "grade": "14",
                   "issuedDate": "2020-06-22"
                 }
@@ -413,11 +425,12 @@
             {
               "id": "achievement:ID13",
               "title": "English",
-              "additionalNote": [" ISCED 0023 - Languages "],
+              "definition": "Results for Foreign languages",
+              "additionalNote": ["ISCED 0023 - Languages"],
               "wasDerivedFrom": [
                 {
                   "id": "urn:assessment:ID113",
-                  "title": "English proficiency ",
+                  "title": "English proficiency",
                   "grade": "C1"
                 }
               ]
@@ -425,12 +438,39 @@
             {
               "id": "achievement:ID14",
               "title": "English",
-              "additionalNote": [" ISCED 0023 - Languages "],
+              "definition": "Results for Foreign languages",
+              "additionalNote": ["ISCED 0023 - Languages"],
               "wasDerivedFrom": [
                 {
                   "id": "urn:assessment:ID114",
-                  "title": "French proficiency ",
+                  "title": "French proficiency",
                   "grade": "B1/B2"
+                }
+              ]
+            },
+            {
+              "id": "achievement:ID15",
+              "title": "French",
+              "definition": "Results for Subject tauch bilingually",
+              "additionalNote": ["ISCED 0023 - Languages"],
+              "wasDerivedFrom": [
+                {
+                  "id": "urn:assessment:ID115",
+                  "title": "to add title",
+                  "grade": "to add grade"
+                }
+              ]
+            },
+            {
+              "id": "achievement:ID16",
+              "title": "Graduation work",
+              "definition": "Results for Foreign languages",
+              "additionalNote": ["Topic:  Test work for Digital Zertificates"],
+              "wasDerivedFrom": [
+                {
+                  "id": "urn:assessment:ID116",
+                  "title": "to add title",
+                  "grade": "to add grade"
                 }
               ]
             }
@@ -440,7 +480,7 @@
           {
             "id": "urn:entitlement:ID1",
             "title": "Passed the German International Abitur",
-            "definition": " The owner completed the Higher Education Entrace Qualification for admission to Higher Education instititutions",
+            "definition": "The owner completed the Higher Education Entrace Qualification for admission to Higher Education instititutions",
             "issuedDate": "2020-06-24T00:00:00+00:00"
           }
         ],
@@ -452,7 +492,7 @@
             "educationLevel": ["urn:uri:isced0444"],
             "creditPoints": 0,
             "maximumDuration": "P21M?",
-            "entryRequirementsNote": "TO UPDATE-The minimum educational requirement for enrolment into ",
+            "entryRequirementsNote": "TO UPDATE-The minimum educational requirement for enrolment into",
             "isPartialQualification": true,
             "eqfLevel": "http://data.europa.eu/snb/eqf/4",
             "nqfLevel": "http://data.europa.eu/snb/qdr/c_bd9f8e42"

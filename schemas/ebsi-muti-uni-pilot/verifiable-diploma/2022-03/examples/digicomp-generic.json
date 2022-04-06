@@ -6,10 +6,6 @@
   "issuanceDate": "2020-07-20T13:58:53+02:00",
   "issued": "2020-07-20T13:58:53+02:00",
   "validFrom": "2019-09-20T00:00:00+02:00",
-  "credentialSchema": {
-    "type": "FullJsonSchemaValidator2021",
-    "id": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0x6b304591b86b7e5e4c8a713ddfb84ee5810a56334827adda4e741f80b9aa49ed"
-  },
   "credentialSubject": {
     "id": "did:epass:person:1",
     "identifier": {
@@ -97,14 +93,14 @@
           ]
         }
       }
-    ],
-    "credentialStatus": {
-      "id": "https://<uri-to-status>",
-      "type": "TrustedCredentialStatus2021"
-    },
-    "credentialSchema": {
-      "id": "https://<uri-to-schema>",
-      "type": "TrustedJsonSchemaValidator2021"
-    }
+    ]
+  },
+  "credentialStatus": {
+    "id": "https://uri.to.status",
+    "type": "TrustedCredentialStatus2021"
+  },
+  "credentialSchema": {
+    "type": "FullJsonSchemaValidator2021",
+    "id": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0x6b304591b86b7e5e4c8a713ddfb84ee5810a56334827adda4e741f80b9aa49ed"
   }
 }
