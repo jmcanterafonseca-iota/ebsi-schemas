@@ -1,24 +1,24 @@
 {
   "@context": ["https://www.w3.org/2018/credentials/v1"],
-  "id": "urn:uuid:4e1022a0-2406-4b82-9adf-b24825d67d9b",
+  "id": "urn:uuid:6fa6f81c-657a-44b8-975c-eae845516628",
   "type": [
     "VerifiableCredential",
     "AccreditedVerifiableAttestation",
-    "VerifiableAccreditation"
+    "VerifiableAccreditationTAOVerifiableDiploma"
   ],
-  "issuer": "did:ebsi:12345",
+  "issuer": "did:ebsi:znVqHKmT14Y24LnBdAyxvh5",
   "termsOfUse": [
     {
       "type": "VerifiableAccreditation",
-      "id": "https://essif.europa.eu/tir-123/did:ebsi:12345/attributes/123"
+      "id": "https://api.preprod.ebsi.eu/trusted-issuers-registry/v2/issuers/did:ebsi:znVqHKmT14Y24LnBdAyxvh5/attributes/267fb6450420d53217a1a21f9447300f7e45ce5f60679597b515e167788c3846"
     }
   ],
-  "issuanceDate": "2022-01-01T00:00:00Z",
-  "validFrom": "2022-01-01T00:00:00Z",
-  "expirationDate": "2024-01-01T00:00:00Z",
-  "issued": "2022-01-01T00:00:00Z",
+  "issuanceDate": "2022-04-05T09:00:00Z",
+  "validFrom": "2022-04-05T09:00:00Z",
+  "expirationDate": "2030-04-05T09:00:00Z",
+  "issued": "2022-04-05T09:00:00Z",
   "credentialSubject": {
-    "id": "did:ebsi:00000",
+    "id": "did:ebsi:zg7CLdZKHSNhE8gNQgnG2wT",
     "authorisationClaims": [
       {
         "authorisedSchemaId": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0x9c26d19032deb5d72f4ac56f3b88c4025c6be8123c244fe57a7d6e5343b71b65"
@@ -26,7 +26,7 @@
     ]
   },
   "credentialStatus": {
-    "id": "https://essif.europa.eu/status/45",
+    "id": "https://essif.europa.eu/status/1",
     "type": "CredentialsStatusList2020"
   },
   "credentialSchema": {

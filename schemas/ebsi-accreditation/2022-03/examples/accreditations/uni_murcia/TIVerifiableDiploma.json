@@ -1,0 +1,36 @@
+{
+  "@context": ["https://www.w3.org/2018/credentials/v1"],
+  "id": "urn:uuid:a2446fe2-f2c6-46db-9469-0b806d0adb94",
+  "type": [
+    "VerifiableCredential",
+    "AccreditedVerifiableAttestation",
+    "VerifiableAccreditationTIVerifiableDiploma"
+  ],
+  "issuer": "did:ebsi:zx25qAUYAkcVP5JwAVhqE5c",
+  "termsOfUse": [
+    {
+      "type": "VerifiableAccreditation",
+      "id": ""
+    }
+  ],
+  "issuanceDate": "2022-03-22T15:00:00Z",
+  "validFrom": "2022-03-22T15:00:00Z",
+  "expirationDate": "2030-03-22T15:00:00Z",
+  "issued": "2022-03-22T15:00:00Z",
+  "credentialSubject": {
+    "id": "did:ebsi:zx23Z6zvZwzhJco3CVLW9k9",
+    "authorisationClaims": [
+      {
+        "authorisedSchemaId": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0x928c0ebb5cfc72c70e1273812eb16f67fa492c52ac9c6330f5e94374d2f48502"
+      }
+    ]
+  },
+  "credentialStatus": {
+    "id": "https://essif.europa.eu/status/1",
+    "type": "CredentialsStatusList2020"
+  },
+  "credentialSchema": {
+    "id": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0x9c26d19032deb5d72f4ac56f3b88c4025c6be8123c244fe57a7d6e5343b71b65",
+    "type": "FullJsonSchemaValidator2021"
+  }
+}
