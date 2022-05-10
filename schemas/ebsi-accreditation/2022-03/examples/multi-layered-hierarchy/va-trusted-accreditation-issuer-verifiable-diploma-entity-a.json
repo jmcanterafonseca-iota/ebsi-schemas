@@ -1,0 +1,39 @@
+{
+  "@context": ["https://www.w3.org/2018/credentials/v1"],
+  "id": "urn:uuid:06cc46fa-cab0-4089-83b8-96dbd57d0408",
+  "type": [
+    "VerifiableCredential",
+    "AccreditedVerifiableAttestation",
+    "VerifiableAccreditationTrustedAccreditationIssuerVerifiableDiploma"
+  ],
+  "issuer": "did:ebsi:entityA",
+  "termsOfUse": [
+    {
+      "type": "VerifiableAccreditation",
+      "id": ""
+    }
+  ],
+  "issuanceDate": "2022-01-01T00:00:00Z",
+  "validFrom": "2022-01-01T00:00:00Z",
+  "expirationDate": "2024-01-01T00:00:00Z",
+  "issued": "2022-01-01T00:00:00Z",
+  "credentialSubject": {
+    "id": "did:ebsi:entityA",
+    "authorisationClaims": [
+      {
+        "authorisedSchemaId": "https://essif.europa.eu/tsr-123/verifiable-accreditation-trusted-accreditation-issuer-verifiable-diploma.json",
+        "limitJurisdiction": "http://publications.europa.eu/resource/authority/atu/NLD",
+        "limitAccreditationDiploma1": "some_value",
+        "limitAccreditationDiploma2": "some_value"
+      }
+    ]
+  },
+  "credentialStatus": {
+    "id": "https://essif.europa.eu/status/45",
+    "type": "CredentialsStatusList2020"
+  },
+  "credentialSchema": {
+    "id": "https://essif.europa.eu/tsr-123/verifiable-accreditation-trusted-accreditation-issuer-verifiable-diploma.json",
+    "type": "FullJsonSchemaValidator2021"
+  }
+}

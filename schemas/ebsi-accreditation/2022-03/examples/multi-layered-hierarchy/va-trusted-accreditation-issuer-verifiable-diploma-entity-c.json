@@ -1,16 +1,16 @@
 {
   "@context": ["https://www.w3.org/2018/credentials/v1"],
-  "id": "urn:uuid:4e1022a0-2406-4b82-9adf-b24825d67d9b",
+  "id": "urn:uuid:cd0a93c9-ae59-4893-b4d0-ae29f19c95bd",
   "type": [
     "VerifiableCredential",
     "AccreditedVerifiableAttestation",
-    "VerifiableAccreditationTAODiploma"
+    "VerifiableAccreditationTrustedAccreditationIssuerVerifiableDiploma"
   ],
-  "issuer": "did:ebsi:12345",
+  "issuer": "did:ebsi:entityA",
   "termsOfUse": [
     {
       "type": "VerifiableAccreditation",
-      "id": "https://essif.europa.eu/tir-123/did:ebsi:12345/attributes/123"
+      "id": "https://essif.europa.eu/tir-123/did:ebsi:entityA/attributes/123"
     }
   ],
   "issuanceDate": "2022-01-01T00:00:00Z",
@@ -18,13 +18,13 @@
   "expirationDate": "2024-01-01T00:00:00Z",
   "issued": "2022-01-01T00:00:00Z",
   "credentialSubject": {
-    "id": "did:ebsi:00000",
+    "id": "did:ebsi:entityC",
     "authorisationClaims": [
       {
-        "authorisedSchemaId": "https://essif.europa.eu/tsr-123/verifiable-accreditation-tao-diploma.json",
+        "authorisedSchemaId": "https://essif.europa.eu/tsr-123/verifiable-accreditation-trusted-accreditation-issuer-verifiable-diploma.json",
         "limitJurisdiction": "http://publications.europa.eu/resource/authority/atu/NLD",
-        "limitTAODiploma1": "some_value",
-        "limitTAODiploma2": "some_value"
+        "limitAccreditationDiploma1": "some_value",
+        "limitAccreditationDiploma2": "some_value"
       }
     ]
   },
@@ -33,7 +33,7 @@
     "type": "CredentialsStatusList2020"
   },
   "credentialSchema": {
-    "id": "https://essif.europa.eu/tsr-123/verifiable-accreditation-tao-diploma.json",
+    "id": "https://essif.europa.eu/tsr-123/verifiable-accreditation-trusted-accreditation-issuer-verifiable-diploma.json",
     "type": "FullJsonSchemaValidator2021"
   }
 }
