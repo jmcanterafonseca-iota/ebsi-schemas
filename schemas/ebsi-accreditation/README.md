@@ -4,6 +4,11 @@
 
 ## Changes
 
+### 2022-05
+
+- Reference EBSI Accredited Verifiable Attestation in `schema.json`.
+- Update EBSI Verifiable Accreditation schema to `2022-05`.
+
 ### 2022-03
 
 - Updated EBSI Verifiable Accreditation according to the new data model.

@@ -4,6 +4,11 @@
 
 ## Changes
 
+### 2022-05
+
+- Added `validUntil` property.
+- Removed the following `evidence` attributes: `verifier`, `evidenceDocument`,`subjectPresence`, `documentPresence`.
+
 ### 2022-02
 
 - Changed `$schema` to `draft-07`.
