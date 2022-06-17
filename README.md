@@ -147,6 +147,17 @@ DID=did:ebsi:z...
 PRIVATE_KEY=0x...
 ```
 
+### `sing-jwt` command
+
+Keys (public and private) can be found from [actors.js](cli/commands/sign-jwt/actors.js) for each valid actor.
+The command helps signing arbitrary json objects. The signer depends on the use case and is selectable by the caller.
+
+```sh
+# Sign all files found with the glob as Alice. Will target all 2022-05 examples
+ejsc sign-jwt alice schemas/**/2022-05/examples/**
+ejsc sign-jwt issuer schemas/**/2022-05/examples/**
+```
+
 ## License
 
 Copyright (c) 2019 European Commission
