@@ -147,15 +147,19 @@ DID=did:ebsi:z...
 PRIVATE_KEY=0x...
 ```
 
-### `sing-jwt` command
+### `sign` command
 
-Keys (public and private) can be found from [actors.js](cli/commands/sign-jwt/actors.js) for each valid actor.
-The command helps signing arbitrary json objects. The signer depends on the use case and is selectable by the caller.
+This command helps signing arbitrary json objects. Keys (public and private) can be found from [actors.js](cli/commands/sign/actors.js) for each valid actor. The signer depends on the use case and is selectable by the caller. Use `--type jwt` for JSON Web Token (JWT) and `--type jws` for General JSON Web Signature (JWS) Serialisation.
 
 ```sh
-# Sign all files found with the glob as Alice. Will target all 2022-05 examples
-ejsc sign-jwt alice schemas/**/2022-05/examples/**
-ejsc sign-jwt issuer schemas/**/2022-05/examples/**
+# Sign all files found with the glob in JWT as Alice. Will target all 2022-05 examples
+ejsc sign --actors alice --type jwt schemas/**/2022-05/examples/**
+
+# Sign all files found with the glob in JWT as issuer. Will target all 2022-05 examples
+ejsc sign --actors issuer --type jwt schemas/**/2022-05/examples/**
+
+# Sign all files found with the glob in JWS as both issuer and issuer2. Will target all 2022-05 examples
+ejsc sign --actors issuer issuer2 --type jws schemas/**/2022-05/examples/**
 ```
 
 ## License

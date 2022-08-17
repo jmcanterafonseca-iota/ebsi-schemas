@@ -1,9 +1,10 @@
-import { Argument } from "commander";
 import { globbySync } from "globby";
 import { dirname, resolve } from "node:path";
 import { readFile } from "node:fs";
 import { fileURLToPath } from "node:url";
-import sign from "./sign.js";
+import { Option } from "commander";
+import signJwt from "./sign-jwt.js";
+import signJws from "./sign-jws.js";
 
 async function filesAsJson(files) {
   return Promise.all(
@@ -32,7 +33,7 @@ async function getFilesContent(patterns) {
     cwd: rootDir,
   });
 
-  if (!(schemas.length > 0)) {
+  if (schemas.length <= 0) {
     console.error("No JSON files found!");
     process.exit(1);
   }
@@ -41,32 +42,51 @@ async function getFilesContent(patterns) {
 
 export default (program) =>
   program
-    .command("sign-jwt")
-    .description("Sign JWT from a file")
-    .addArgument(
-      new Argument("<actor>", "signer").choices([
-        "alice",
-        "bob",
-        "verifier",
-        "issuer",
-      ])
-    )
+    .command("sign")
+    .description("Sign from a file")
     .argument(
       "<patterns...>",
       "Glob path(s) to JSON Schema(s), like schemas/**/2022-05/examples/**"
     )
-    .action(async (actor, patterns) => {
+    .addOption(
+      new Option(
+        "--type <type>",
+        "Signature type (JWT, General JWS Serialisation)"
+      ).choices(["jwt", "jws"])
+    )
+    .addOption(
+      new Option(
+        "--actors <actors...>",
+        'Actor or list of actors separated by whitespace, like "alice" or "issuer issuer2"'
+      ).choices(["alice", "bob", "issuer", "issuer2", "verifier"])
+    )
+    .action(async (patterns, options) => {
       try {
         const filesContent = await getFilesContent(patterns);
+        const { type, actors } = options;
+
+        if (type === "jwt" && actors.length > 1) {
+          throw new Error(`Only one actor can sign with type "${type}"`);
+        }
+
         const signedContent = await Promise.all(
-          filesContent.map(async ({ name, json }) => ({
-            jwt: await sign(json, actor),
-            name,
-          }))
+          filesContent.map(async ({ name, json }) => {
+            if (type === "jwt") {
+              return {
+                jwt: await signJwt(json, actors[0]),
+                name,
+              };
+            }
+            // jws
+            return {
+              jws: await signJws(json, actors),
+              name,
+            };
+          })
         );
 
-        console.log(`Actor "${actor}" signatures`);
-        console.log(signedContent);
+        console.log(`Actor(s) "${actors.join(" ")}" signatures`);
+        console.log(JSON.stringify(signedContent, null, 2));
       } catch (ex) {
         console.error(ex);
         process.exit(1);

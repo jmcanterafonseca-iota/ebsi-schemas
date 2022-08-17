@@ -31,6 +31,16 @@ const issuerJwk = {
   y: "k-t1bfe-MmmXWQ0QaxK3uJMYlMNkJHYGUSLpxP9RQak",
   alg: "ES256",
 };
+const issuer2Jwk = {
+  kty: "EC",
+  d: "PCcWAK7O6k9ZTAAdkMLupWgtZAnBd1cdtRCqx2lAIxo",
+  use: "sig",
+  crv: "P-256",
+  kid: "HPUAxKiNKuMA_bPpsrtpDXJ_4-_ApXC83TcSJ9x_XNY",
+  x: "EYZ9V2hK2mB6hcnr19xSUCUmj2LGQlcvMyD1aMzK8Mo",
+  y: "yQaB8qkLiBow0kMNTN9N-PjpyubsOiPttuk9homV8k8",
+  alg: "ES256",
+};
 const verifierJwk = {
   kty: "EC",
   d: "ucRzbXf23xXpfyXvDOeg-Woo5pywv6XJ1CQovhiZb_U",
@@ -80,6 +90,10 @@ export default async () => ({
   issuer: await makeLegalEntity(
     issuerJwk,
     "01af8270b9275bb3a8b1f3f924cbf9ba69"
+  ),
+  issuer2: await makeLegalEntity(
+    issuer2Jwk,
+    "0126b53dae230777db55ad58a9d09bb0d5"
   ),
   verifier: await makeLegalEntity(
     verifierJwk,

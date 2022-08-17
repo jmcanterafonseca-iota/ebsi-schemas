@@ -2,7 +2,7 @@ import { Command } from "commander";
 import dotenv from "dotenv";
 import computeId from "./commands/compute-id.js";
 import publish from "./commands/publish.js";
-import signJwt from "./commands/sign-jwt/index.js";
+import sign from "./commands/sign/index.js";
 
 export default function run() {
   dotenv.config();
@@ -20,8 +20,8 @@ export default function run() {
   // Add "publish" command
   publish(program);
 
-  // Add "sign-jwt" command
-  signJwt(program);
+  // Add "sign" command
+  sign(program);
 
   program.parse();
 }

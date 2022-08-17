@@ -47,7 +47,7 @@ const enrichVC = (payload, data) => {
   return payload;
 };
 
-export default async function sign(data, actor) {
+export default async function signJwt(data, actor) {
   const type = Array.isArray(data.type) ? data.type : [data.type];
   const actors = await initActors();
   const header = setupHeader(actors[actor]);
@@ -60,7 +60,7 @@ export default async function sign(data, actor) {
     const vcSubject =
       vcs[0] && vcs[0].credentialSubject && vcs[0].credentialSubject.id;
     const signedCredentials = await Promise.all(
-      vcs.map(async (i) => sign(i, "issuer"))
+      vcs.map(async (i) => signJwt(i, "issuer"))
     );
 
     const vpData = {
