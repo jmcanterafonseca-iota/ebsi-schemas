@@ -40,6 +40,8 @@ exports[`Schema schemas/ebsi-presentation/2022-02/schema.json should not contain
 
 exports[`Schema schemas/ebsi-revocation/2022-08/schema.json should not contain breaking changes 1`] = `"0x64396ad493808613f5ff09ad137eeaa45c26146f986b526179b54cd894b3587e"`;
 
+exports[`Schema schemas/ebsi-verifiable-authorisation/2022-08/schema.json should not contain breaking changes 1`] = `"0x90bbb5e0ebee6538cdae44db9a6f8c38d85c5a4d69e92e0c633ea19e5aeb197f"`;
+
 exports[`Schema schemas/ebsi-vid/legal-entity/2022-02/schema.json should not contain breaking changes 1`] = `"0x3c1a04b86d9840ed2017847932a049d312282ec5d96f4ef86c91ecd6aad1f345"`;
 
 exports[`Schema schemas/ebsi-vid/natural-person/2022-02/schema.json should not contain breaking changes 1`] = `"0xad457662a535791e888994e97d7b5e0cdd09fbae2c8900039d2ee2d9a64969b1"`;
