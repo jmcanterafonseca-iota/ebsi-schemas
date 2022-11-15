@@ -4,6 +4,10 @@
 
 ## Changes
 
+### 2022-11
+
+- Pump to json-schema 2020-12
+
 ### 2022-05
 
 Initial schema.

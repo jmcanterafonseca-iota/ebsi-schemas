@@ -1,0 +1,41 @@
+{
+  "@context": ["https://www.w3.org/2018/credentials/v1"],
+  "type": ["VerifiablePresentation"],
+  "holder": "did:ebsi:00012345",
+  "verifiableCredential": [
+    {
+      "@context": ["https://www.w3.org/2018/credentials/v1"],
+      "id": "urn:uuid:b5bf4778-b8f5-4d76-aa0d-aab46ae9a8fe",
+      "type": ["VerifiableCredential", "VerifiableAttestation", "VerifiableId"],
+      "issuer": "did:ebsi:0001234",
+      "issuanceDate": "2021-11-41T00:00:00Z",
+      "validFrom": "2021-11-01T00:00:00Z",
+      "credentialSubject": {
+        "id": "did:ebsi:00012345",
+        "personalIdentifier": "IT/DE/1234",
+        "familyName": "Castafiori",
+        "firstName": "Bianca",
+        "dateOfBirth": "1930-10-01"
+      },
+      "credentialSchema": {
+        "id": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0xad457662a535791e888994e97d7b5e0cdd09fbae2c8900039d2ee2d9a64969b1",
+        "type": "FullJsonSchemaValidator2021"
+      }
+    },
+    {
+      "@context": ["https://www.w3.org/2018/credentials/v1"],
+      "id": "urn:uuid:8ebaad40-6b85-41d6-b7e8-86f2b5fc2b31",
+      "type": ["VerifiableCredential", "VerifiableAttestation"],
+      "issuer": "did:ebsi:0001234",
+      "issuanceDate": "2021-11-41T00:00:00Z",
+      "validFrom": "2021-11-01T00:00:00Z",
+      "credentialSubject": {
+        "id": "did:ebsi:00012345"
+      },
+      "credentialSchema": {
+        "id": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0x28d76954924d1c4747a4f1f9e3e9edc9ca965efbf8ff20e4339c2bf2323a5773",
+        "type": "FullJsonSchemaValidator2021"
+      }
+    }
+  ]
+}

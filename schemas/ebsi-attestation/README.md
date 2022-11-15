@@ -4,6 +4,10 @@
 
 ## Changes
 
+### 2022-11
+
+- Pump to json-schema 2020-12
+
 ### 2022-08
 
 - Added the following `credentialStatus` attributes: `statusPurpose`, `statusListIndex`, `statusListCredential`.
