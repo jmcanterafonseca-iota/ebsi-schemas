@@ -5,7 +5,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../../../ebsi-attestation/2022-08/schema.json"
+      "$ref": "../../../ebsi-attestation/2022-11/schema.json"
     },
     {
       "properties": {
