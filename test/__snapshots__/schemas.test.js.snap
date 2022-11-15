@@ -1,77 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Schema schemas/ebsi-accreditation/2022-01/schema.json should not contain breaking changes 1`] = `"0x7d8700a8eb8c11a7200f9c39ce18b1712ca5d065acf825a2e3a1098f49bd6d6c"`;
-
-exports[`Schema schemas/ebsi-accreditation/2022-02/schema.json should not contain breaking changes 1`] = `"0xb9d2c90ac8041379fd5d682faf4350e74453f89b064f7702d5c9a71e37d7efe8"`;
-
-exports[`Schema schemas/ebsi-accreditation/2022-03/schema.json should not contain breaking changes 1`] = `"0x9c26d19032deb5d72f4ac56f3b88c4025c6be8123c244fe57a7d6e5343b71b65"`;
-
-exports[`Schema schemas/ebsi-accreditation/2022-05/schema.json should not contain breaking changes 1`] = `"0x3b4650f9b09d5ad065c72cec004b8a0896d55e4a25a412cab01ecd6580732803"`;
-
 exports[`Schema schemas/ebsi-accreditation/2022-11/schema.json should not contain breaking changes 1`] = `"0xdb52cf04fcff98a32d004c5024b2d666f9b2474f3f0f2f65ec8bcca60d98bfbc"`;
-
-exports[`Schema schemas/ebsi-accredited-attestation/2022-05/schema.json should not contain breaking changes 1`] = `"0x2dad717a5a0fc9edaf518aeae7f4068fc59487d96fdf576527165b5216303b82"`;
 
 exports[`Schema schemas/ebsi-accredited-attestation/2022-11/schema.json should not contain breaking changes 1`] = `"0xcb6d86ed17e50ebd1bf2b43af1af987d87c2ca19f7b519714b93764285b85631"`;
 
-exports[`Schema schemas/ebsi-attestation/2021-11/schema.json should not contain breaking changes 1`] = `"0x7f6c312ff3f7da74376304ac580abc6425e8dfa6009933c8360883049e4e0980"`;
-
-exports[`Schema schemas/ebsi-attestation/2022-02/schema.json should not contain breaking changes 1`] = `"0x28d76954924d1c4747a4f1f9e3e9edc9ca965efbf8ff20e4339c2bf2323a5773"`;
-
-exports[`Schema schemas/ebsi-attestation/2022-05/schema.json should not contain breaking changes 1`] = `"0x8eac64f2689fc98a88800775765102fea5a80939a3caf92e88ee06d364a569b8"`;
-
-exports[`Schema schemas/ebsi-attestation/2022-08/schema.json should not contain breaking changes 1`] = `"0xf30fd418c8b2c1534b0685e12b044d3d29284fe37762a45d0c1e5601eed3d1d9"`;
-
 exports[`Schema schemas/ebsi-attestation/2022-11/schema.json should not contain breaking changes 1`] = `"0xeb6d8131264327f3cbc5ddba9c69cb9afd34732b3b787e4b3e3507a25d3079e9"`;
-
-exports[`Schema schemas/ebsi-essp/pda1/2022-03/2019-09/schema.json should not contain breaking changes 1`] = `"0x0ce34cab347f891b33b0a7a3e300f67840f5f1eb3a0c76dd2db2991815807fe1"`;
-
-exports[`Schema schemas/ebsi-essp/pda1/2022-03/draft-07/schema.json should not contain breaking changes 1`] = `"0x50490ec4e2b3053f707cc121c26217cbec363f3b9e909175d073d04c73890f9a"`;
 
 exports[`Schema schemas/ebsi-essp/pda1/2022-11/schema.json should not contain breaking changes 1`] = `"0xe5e53f7bcebe95fc9576e27298de64bfacf592dd9be673eb6b8edbc4795ac96a"`;
 
-exports[`Schema schemas/ebsi-muti-uni-pilot/education-verifiable-accreditation-records/2022-02/schema.json should not contain breaking changes 1`] = `"0x6b304591b86b7e5e4c8a713ddfb84ee5810a56334827adda4e741f80b9aa49ed"`;
-
-exports[`Schema schemas/ebsi-muti-uni-pilot/education-verifiable-accreditation-records/2022-03/schema.json should not contain breaking changes 1`] = `"0x13d597f8495e6b6e3d0c072218756a1bcc3ea50ebeb3ab4c3944bd400e0c3c6a"`;
-
 exports[`Schema schemas/ebsi-muti-uni-pilot/education-verifiable-accreditation-records/2022-11/schema.json should not contain breaking changes 1`] = `"0x0b0e23cde1dad6e51f097998d749406a022e6e05cb995dd92cff9f150a4a6696"`;
-
-exports[`Schema schemas/ebsi-muti-uni-pilot/verifiable-attestation-individual-id/2021-12/schema.json should not contain breaking changes 1`] = `"0x5f548a097ba97c3f89d5b4dbc826b3221206ddec19d61cc84b3a756207592985"`;
-
-exports[`Schema schemas/ebsi-muti-uni-pilot/verifiable-attestation-individual-id/2022-02/schema.json should not contain breaking changes 1`] = `"0xb77f8516a965631b4f197ad54c65a9e2f9936ebfb76bae4906d33744dbcc60ba"`;
 
 exports[`Schema schemas/ebsi-muti-uni-pilot/verifiable-attestation-individual-id/2022-11/schema.json should not contain breaking changes 1`] = `"0x6ff8cdf21b3969222e4a799d9605997b0f1de7d49edcde4ad0c09eb636dfaf3c"`;
 
-exports[`Schema schemas/ebsi-muti-uni-pilot/verifiable-attestation-organisational-id/2022-03/schema.json should not contain breaking changes 1`] = `"0x530809afc39dafa06a428c0e166b4678dc8300835edfa7f0cc03c3ac3a61b1e5"`;
-
 exports[`Schema schemas/ebsi-muti-uni-pilot/verifiable-attestation-organisational-id/2022-11/schema.json should not contain breaking changes 1`] = `"0x960904265eba56f0c3a171f19af2970d3c62eb0ed1cd7981065261f37f007101"`;
-
-exports[`Schema schemas/ebsi-muti-uni-pilot/verifiable-diploma/2022-03/schema.json should not contain breaking changes 1`] = `"0x6b304591b86b7e5e4c8a713ddfb84ee5810a56334827adda4e741f80b9aa49ed"`;
 
 exports[`Schema schemas/ebsi-muti-uni-pilot/verifiable-diploma/2022-11/schema.json should not contain breaking changes 1`] = `"0x4dd3926cd92bb3cb64fa6c837539ed31fc30dd38a11266a91678efa7268cde09"`;
 
-exports[`Schema schemas/ebsi-presentation/2021-11/schema.json should not contain breaking changes 1`] = `"0xff839bbe9c571e93779c0aade78d93b824760dc13ce4b5ea4d9cb0489f99fead"`;
-
-exports[`Schema schemas/ebsi-presentation/2022-02/schema.json should not contain breaking changes 1`] = `"0x7e53dd8c85ffdbf0fff15599e887d6221ab02982d24d857aae1b3d2cc294f048"`;
-
 exports[`Schema schemas/ebsi-presentation/2022-11/schema.json should not contain breaking changes 1`] = `"0xdacd5a6b1a92d5da622514b9c10cf208ccbc1ad7e1e7d9d80073d8416114024e"`;
-
-exports[`Schema schemas/ebsi-revocation-statuslist/2022-08/schema.json should not contain breaking changes 1`] = `"0x64396ad493808613f5ff09ad137eeaa45c26146f986b526179b54cd894b3587e"`;
 
 exports[`Schema schemas/ebsi-revocation-statuslist/2022-11/schema.json should not contain breaking changes 1`] = `"0xcf8bf7adfdd8cf67f4553fc1495b2e043cdfd54266f4417ac768e9a60acb6822"`;
 
-exports[`Schema schemas/ebsi-verifiable-authorisation/2022-08/schema.json should not contain breaking changes 1`] = `"0x90bbb5e0ebee6538cdae44db9a6f8c38d85c5a4d69e92e0c633ea19e5aeb197f"`;
-
 exports[`Schema schemas/ebsi-verifiable-authorisation/2022-11/schema.json should not contain breaking changes 1`] = `"0xb32bd6c7f8410c3786ebb2c2799c76612e66398243f0c41f5f63f6b9415d5f26"`;
-
-exports[`Schema schemas/ebsi-vid/legal-entity/2022-02/schema.json should not contain breaking changes 1`] = `"0x3c1a04b86d9840ed2017847932a049d312282ec5d96f4ef86c91ecd6aad1f345"`;
 
 exports[`Schema schemas/ebsi-vid/legal-entity/2022-11/schema.json should not contain breaking changes 1`] = `"0x4d5bf5af4a3d44cee631b4343028a1dc8e77989325d9919f94867b8bc7443815"`;
 
-exports[`Schema schemas/ebsi-vid/natural-person/2022-02/schema.json should not contain breaking changes 1`] = `"0xad457662a535791e888994e97d7b5e0cdd09fbae2c8900039d2ee2d9a64969b1"`;
-
 exports[`Schema schemas/ebsi-vid/natural-person/2022-11/schema.json should not contain breaking changes 1`] = `"0x0f41a1f4934e11f8f98e444ed34fb040645dcc04cead2ae28fca062eabfac181"`;
-
-exports[`Schema schemas/ebsi-vid/verifiable-authorisation/2022-02/schema.json should not contain breaking changes 1`] = `"0x9e096019374c3afcb1ae7c4b97afc1aa73bd325afa9557b8cba23ccb11a79895"`;
 
 exports[`Schema schemas/ebsi-vid/verifiable-authorisation/2022-11/schema.json should not contain breaking changes 1`] = `"0x50f076195a3f6285fb39a3307d289fd2e3cc3142e15775b9ca94519497067252"`;
