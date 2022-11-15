@@ -13,20 +13,22 @@ const ignoreList = [
   "schemas/ebsi-muti-uni-pilot/education-verifiable-accreditation-records/2021-12/**/*",
   "schemas/ebsi-muti-uni-pilot/verifiable-attestation-organisational-id/2021-12/**/*",
   "schemas/ebsi-muti-uni-pilot/verifiable-diploma/2021-11/**/*",
+  "schemas/**/examples/skip-test/**/*",
 ];
 
 // Find all examples
 const examples = [];
 const currentDir = dirname(fileURLToPath(import.meta.url));
 const rootDir = resolve(currentDir, "..");
-const matches = globbySync(["schemas/**/examples/*.json"], {
+const matches = globbySync(["schemas/**/examples/**/*.json"], {
   cwd: rootDir,
   ignore: ignoreList,
 });
 matches.forEach((exampleFile) => {
+  const schemaRoot = dirname(exampleFile).replace(/\/examples\/?.*/, "");
   examples.push({
     exampleFile,
-    schemaFile: resolve(dirname(exampleFile), "../schema.json"),
+    schemaFile: resolve(schemaRoot, "./schema.json"),
   });
 });
 
