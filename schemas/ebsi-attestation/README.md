@@ -4,6 +4,15 @@
 
 ## Changes
 
+### 2022-11_01
+
+- Improve descriptions on several fields
+- modify `credentialSchema` to support single object or array of objects
+  - will contain `type schema` and optionally `type extensions schema`
+- add `termsOfUse`, to be used with `type extensions`
+- evidence `id` is optional
+- Removed `credentialStatus` StatusList2021Credential specification, as it is a type extension
+
 ### 2022-11
 
 - Pump to json-schema 2020-12

@@ -4,6 +4,11 @@
 
 ## Changes
 
+### 2022-11_01
+
+- Use `extended types` to identify between accreditation to accredit and to attest
+- Add `types` property to define the exact accreditation in schema
+
 ### 2022-11
 
 - Pump to json-schema 2020-12

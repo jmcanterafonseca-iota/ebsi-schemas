@@ -4,9 +4,13 @@
 
 ## Changes
 
+### 2022-11_01
+
+- Pump to ebsi-attestation 2020-11_01
+
 ### 2022-11
 
-- Pump to json-schema 2020-12
+- Pump to ebsi-attestation 2020-11
 
 ### 2022-03
 

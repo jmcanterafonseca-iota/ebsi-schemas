@@ -4,6 +4,10 @@
 
 ## Changes
 
+### 2022-11_01
+
+- Require `credentialSubject.type` to be StatusList2021
+
 ### 2022-11
 
 - Pump to json-schema 2020-12

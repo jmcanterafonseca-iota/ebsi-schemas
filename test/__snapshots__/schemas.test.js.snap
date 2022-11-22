@@ -2,11 +2,17 @@
 
 exports[`Schema schemas/ebsi-accreditation/2022-11/schema.json should not contain breaking changes 1`] = `"0xdb52cf04fcff98a32d004c5024b2d666f9b2474f3f0f2f65ec8bcca60d98bfbc"`;
 
+exports[`Schema schemas/ebsi-accreditation/2022-11_01/schema.json should not contain breaking changes 1`] = `"0x0ae2557fafdc17a87b015b5087db42d846d32c0ffbf8492860e956f7a73d5681"`;
+
 exports[`Schema schemas/ebsi-accredited-attestation/2022-11/schema.json should not contain breaking changes 1`] = `"0xcb6d86ed17e50ebd1bf2b43af1af987d87c2ca19f7b519714b93764285b85631"`;
 
 exports[`Schema schemas/ebsi-attestation/2022-11/schema.json should not contain breaking changes 1`] = `"0xeb6d8131264327f3cbc5ddba9c69cb9afd34732b3b787e4b3e3507a25d3079e9"`;
 
+exports[`Schema schemas/ebsi-attestation/2022-11_01/schema.json should not contain breaking changes 1`] = `"0x23039e6356ea6b703ce672e7cfac0b42765b150f63df78e2bd18ae785787f6a2"`;
+
 exports[`Schema schemas/ebsi-essp/pda1/2022-11/schema.json should not contain breaking changes 1`] = `"0xe5e53f7bcebe95fc9576e27298de64bfacf592dd9be673eb6b8edbc4795ac96a"`;
+
+exports[`Schema schemas/ebsi-essp/pda1/2022-11_01/schema.json should not contain breaking changes 1`] = `"0x47c61667281cc3883cca001bcac7038237c85d0e8f61f139652375c330a99063"`;
 
 exports[`Schema schemas/ebsi-muti-uni-pilot/education-verifiable-accreditation-records/2022-11/schema.json should not contain breaking changes 1`] = `"0x0b0e23cde1dad6e51f097998d749406a022e6e05cb995dd92cff9f150a4a6696"`;
 
@@ -20,6 +26,8 @@ exports[`Schema schemas/ebsi-presentation/2022-11/schema.json should not contain
 
 exports[`Schema schemas/ebsi-revocation-statuslist/2022-11/schema.json should not contain breaking changes 1`] = `"0xcf8bf7adfdd8cf67f4553fc1495b2e043cdfd54266f4417ac768e9a60acb6822"`;
 
+exports[`Schema schemas/ebsi-revocation-statuslist/2022-11_01/schema.json should not contain breaking changes 1`] = `"0x4e94b5370f43581c19f6f51f043e00be528334f94769008c8013222dd257500b"`;
+
 exports[`Schema schemas/ebsi-verifiable-authorisation/2022-11/schema.json should not contain breaking changes 1`] = `"0xb32bd6c7f8410c3786ebb2c2799c76612e66398243f0c41f5f63f6b9415d5f26"`;
 
 exports[`Schema schemas/ebsi-vid/legal-entity/2022-11/schema.json should not contain breaking changes 1`] = `"0x4d5bf5af4a3d44cee631b4343028a1dc8e77989325d9919f94867b8bc7443815"`;
@@ -27,3 +35,7 @@ exports[`Schema schemas/ebsi-vid/legal-entity/2022-11/schema.json should not con
 exports[`Schema schemas/ebsi-vid/natural-person/2022-11/schema.json should not contain breaking changes 1`] = `"0x0f41a1f4934e11f8f98e444ed34fb040645dcc04cead2ae28fca062eabfac181"`;
 
 exports[`Schema schemas/ebsi-vid/verifiable-authorisation/2022-11/schema.json should not contain breaking changes 1`] = `"0x50f076195a3f6285fb39a3307d289fd2e3cc3142e15775b9ca94519497067252"`;
+
+exports[`Schema schemas/type-extensions/credentialStatus/StatusList2021/2022-11_01/schema.json should not contain breaking changes 1`] = `"0x60d2b6a9a923dacfa6c2cb03d101b92c2b2683ed5e248ffa8fb414edbb6b9670"`;
+
+exports[`Schema schemas/type-extensions/termsOfUse/IssuanceCertificate/2022-11_01/schema.json should not contain breaking changes 1`] = `"0x1d7146f8897aa6cd5c59321ea0756ec61277028e4a8b3c13ec1b310ec47e6495"`;
