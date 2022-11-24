@@ -20,7 +20,10 @@ export default (program) =>
     .description("Publish the JSON Schema to the Trusted Schemas Registry")
     .argument("[paths...]", "Path(s) to JSON Schema(s)")
     .option("--all", "Publish all JSON Schemas")
-    .option("-e, --env <env>", "EBSI Environment (test, pilot)")
+    .option(
+      "-e, --env <env>",
+      "EBSI Environment (test, conformance, pilot, preprod)"
+    )
     .action(async (paths, options) => {
       const currentDir = dirname(fileURLToPath(import.meta.url));
       const rootDir = resolve(currentDir, "../..");
@@ -38,7 +41,12 @@ export default (program) =>
               type: "list",
               message: "EBSI environment?",
               name: "env",
-              choices: [{ value: "test" }, { value: "pilot" }],
+              choices: [
+                { value: "test" },
+                { value: "conformance" },
+                { value: "pilot" },
+                { value: "preprod" },
+              ],
             },
           ]);
           env = answers.env;
@@ -47,19 +55,19 @@ export default (program) =>
 
       const allSchemaIds = await getSchemaIds([], { all: true });
 
-      let did;
+      let kid;
       let privateKey;
 
-      if (process.env.DID && process.env.PRIVATE_KEY) {
-        did = process.env.DID;
+      if (process.env.KID && process.env.PRIVATE_KEY) {
+        kid = process.env.KID;
         privateKey = process.env.PRIVATE_KEY;
       } else {
-        // Request user DID and private key
+        // Request user KID and private key
         const answers = await inquirer.prompt([
           {
             type: "input",
-            name: "did",
-            message: "What's your DID?",
+            name: "kid",
+            message: "What's your KID?",
           },
           {
             type: "password",
@@ -67,7 +75,7 @@ export default (program) =>
             message: "Enter your hex private key (prefixed with 0x)",
           },
         ]);
-        did = answers.did;
+        kid = answers.kid;
         privateKey = answers.privateKey;
       }
 
@@ -78,10 +86,10 @@ export default (program) =>
             task: async (ctx, task) => {
               // Get SIOP JWT
               const accessToken = await requestSiopJwt({
+                clientKid: kid,
+                clientPrivateKey: privateKey,
                 authorisationApiUrl: CONFIG[env].AUTH,
-                didRegistry: `${CONFIG[env].DIDR}/identifiers`,
-                did,
-                privateKey,
+                trustedAppsRegistryUrl: CONFIG[env].TAR,
               });
 
               ctx.accessToken = accessToken;

@@ -86,7 +86,7 @@
     "id": "did:ebsi:zgsaCQxPaQwA4VcNRsjwUBFyeHSVwcyCnaXnfKYsSzUkZ"
   },
   "credentialSchema": {
-    "id": "https://api.test.intebsi.xyz/trusted-schemas-registry/v2/schemas/z3BTAA7Cs3qw8UV8YtgCVMicPNkaYHfFZZPfUfXAbFvng",
+    "id": "https://api-test.ebsi.eu/trusted-schemas-registry/v2/schemas/z3BTAA7Cs3qw8UV8YtgCVMicPNkaYHfFZZPfUfXAbFvng",
     "type": "FullJsonSchemaValidator2021"
   }
 }

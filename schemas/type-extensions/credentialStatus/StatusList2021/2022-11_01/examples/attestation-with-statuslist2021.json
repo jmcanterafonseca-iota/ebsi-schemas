@@ -12,11 +12,11 @@
   },
   "credentialSchema": [
     {
-      "id": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0x23039e6356ea6b703ce672e7cfac0b42765b150f63df78e2bd18ae785787f6a2",
+      "id": "https://api-test.ebsi.eu/trusted-schemas-registry/v2/schemas/0x23039e6356ea6b703ce672e7cfac0b42765b150f63df78e2bd18ae785787f6a2",
       "type": "FullJsonSchemaValidator2021"
     },
     {
-      "id": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0x60d2b6a9a923dacfa6c2cb03d101b92c2b2683ed5e248ffa8fb414edbb6b9670",
+      "id": "https://api-test.ebsi.eu/trusted-schemas-registry/v2/schemas/0x60d2b6a9a923dacfa6c2cb03d101b92c2b2683ed5e248ffa8fb414edbb6b9670",
       "type": "FullJsonSchemaValidator2021"
     }
   ]

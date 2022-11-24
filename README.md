@@ -143,7 +143,7 @@ Example:
 
 ```
 EBSI_ENV=pilot
-DID=did:ebsi:z...
+KID="did:ebsi:z...#..."
 PRIVATE_KEY=0x...
 ```
 

@@ -2433,11 +2433,11 @@
     ]
   },
   "credentialStatus": {
-    "id": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1",
+    "id": "https://api-test.ebsi.eu/trusted-schemas-registry/v1",
     "type": "TrustedCredentialStatus2021"
   },
   "credentialSchema": {
-    "id": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0xsomething",
+    "id": "https://api-test.ebsi.eu/trusted-schemas-registry/v2/schemas/0xsomething",
     "type": "FullJsonSchemaValidator2021"
   },
   "proof": {

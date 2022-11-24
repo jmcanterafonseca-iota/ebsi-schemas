@@ -11,16 +11,16 @@
     "id": "did:ebsi:00001235"
   },
   "termsOfUse": {
-    "id": "https://api.preprod.ebsi.eu/trusted-issuers-registry/../..xyz",
+    "id": "https://api-test.ebsi.eu/trusted-issuers-registry/../..xyz",
     "type": "IssuanceCertificate"
   },
   "credentialSchema": [
     {
-      "id": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0x23039e6356ea6b703ce672e7cfac0b42765b150f63df78e2bd18ae785787f6a2",
+      "id": "https://api-test.ebsi.eu/trusted-schemas-registry/v2/schemas/0x23039e6356ea6b703ce672e7cfac0b42765b150f63df78e2bd18ae785787f6a2",
       "type": "FullJsonSchemaValidator2021"
     },
     {
-      "id": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0x1d7146f8897aa6cd5c59321ea0756ec61277028e4a8b3c13ec1b310ec47e6495",
+      "id": "https://api-test.ebsi.eu/trusted-schemas-registry/v2/schemas/0x1d7146f8897aa6cd5c59321ea0756ec61277028e4a8b3c13ec1b310ec47e6495",
       "type": "FullJsonSchemaValidator2021"
     }
   ]

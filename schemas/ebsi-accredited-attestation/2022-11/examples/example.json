@@ -25,7 +25,7 @@
     "type": "CredentialsStatusList2020"
   },
   "credentialSchema": {
-    "id": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0x4a131e78474b35ca4c93d4904cae9f2013cd53794ce521f6fcfac17ac460c6e5",
+    "id": "https://api-test.ebsi.eu/trusted-schemas-registry/v2/schemas/0x4a131e78474b35ca4c93d4904cae9f2013cd53794ce521f6fcfac17ac460c6e5",
     "type": "FullJsonSchemaValidator2021"
   }
 }

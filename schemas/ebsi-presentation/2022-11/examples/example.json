@@ -18,7 +18,7 @@
         "dateOfBirth": "1930-10-01"
       },
       "credentialSchema": {
-        "id": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0xad457662a535791e888994e97d7b5e0cdd09fbae2c8900039d2ee2d9a64969b1",
+        "id": "https://api-test.ebsi.eu/trusted-schemas-registry/v2/schemas/0xad457662a535791e888994e97d7b5e0cdd09fbae2c8900039d2ee2d9a64969b1",
         "type": "FullJsonSchemaValidator2021"
       }
     },
@@ -33,7 +33,7 @@
         "id": "did:ebsi:00012345"
       },
       "credentialSchema": {
-        "id": "https://api.preprod.ebsi.eu/trusted-schemas-registry/v1/schemas/0x28d76954924d1c4747a4f1f9e3e9edc9ca965efbf8ff20e4339c2bf2323a5773",
+        "id": "https://api-test.ebsi.eu/trusted-schemas-registry/v2/schemas/0x28d76954924d1c4747a4f1f9e3e9edc9ca965efbf8ff20e4339c2bf2323a5773",
         "type": "FullJsonSchemaValidator2021"
       }
     },
