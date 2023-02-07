@@ -1,41 +1,146 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Schema schemas/ebsi-accreditation/2022-11/schema.json should not contain breaking changes 1`] = `"0xdb52cf04fcff98a32d004c5024b2d666f9b2474f3f0f2f65ec8bcca60d98bfbc"`;
-
-exports[`Schema schemas/ebsi-accreditation/2022-11_01/schema.json should not contain breaking changes 1`] = `"0x0ae2557fafdc17a87b015b5087db42d846d32c0ffbf8492860e956f7a73d5681"`;
-
-exports[`Schema schemas/ebsi-accredited-attestation/2022-11/schema.json should not contain breaking changes 1`] = `"0xcb6d86ed17e50ebd1bf2b43af1af987d87c2ca19f7b519714b93764285b85631"`;
-
-exports[`Schema schemas/ebsi-attestation/2022-11/schema.json should not contain breaking changes 1`] = `"0xeb6d8131264327f3cbc5ddba9c69cb9afd34732b3b787e4b3e3507a25d3079e9"`;
-
-exports[`Schema schemas/ebsi-attestation/2022-11_01/schema.json should not contain breaking changes 1`] = `"0x23039e6356ea6b703ce672e7cfac0b42765b150f63df78e2bd18ae785787f6a2"`;
-
-exports[`Schema schemas/ebsi-essp/pda1/2022-11/schema.json should not contain breaking changes 1`] = `"0xe5e53f7bcebe95fc9576e27298de64bfacf592dd9be673eb6b8edbc4795ac96a"`;
-
-exports[`Schema schemas/ebsi-essp/pda1/2022-11_01/schema.json should not contain breaking changes 1`] = `"0x47c61667281cc3883cca001bcac7038237c85d0e8f61f139652375c330a99063"`;
-
-exports[`Schema schemas/ebsi-muti-uni-pilot/education-verifiable-accreditation-records/2022-11/schema.json should not contain breaking changes 1`] = `"0x0b0e23cde1dad6e51f097998d749406a022e6e05cb995dd92cff9f150a4a6696"`;
-
-exports[`Schema schemas/ebsi-muti-uni-pilot/verifiable-attestation-individual-id/2022-11/schema.json should not contain breaking changes 1`] = `"0x6ff8cdf21b3969222e4a799d9605997b0f1de7d49edcde4ad0c09eb636dfaf3c"`;
-
-exports[`Schema schemas/ebsi-muti-uni-pilot/verifiable-attestation-organisational-id/2022-11/schema.json should not contain breaking changes 1`] = `"0x960904265eba56f0c3a171f19af2970d3c62eb0ed1cd7981065261f37f007101"`;
-
-exports[`Schema schemas/ebsi-muti-uni-pilot/verifiable-diploma/2022-11/schema.json should not contain breaking changes 1`] = `"0x4dd3926cd92bb3cb64fa6c837539ed31fc30dd38a11266a91678efa7268cde09"`;
-
-exports[`Schema schemas/ebsi-presentation/2022-11/schema.json should not contain breaking changes 1`] = `"0xdacd5a6b1a92d5da622514b9c10cf208ccbc1ad7e1e7d9d80073d8416114024e"`;
-
-exports[`Schema schemas/ebsi-revocation-statuslist/2022-11/schema.json should not contain breaking changes 1`] = `"0xcf8bf7adfdd8cf67f4553fc1495b2e043cdfd54266f4417ac768e9a60acb6822"`;
-
-exports[`Schema schemas/ebsi-revocation-statuslist/2022-11_01/schema.json should not contain breaking changes 1`] = `"0x4e94b5370f43581c19f6f51f043e00be528334f94769008c8013222dd257500b"`;
-
-exports[`Schema schemas/ebsi-verifiable-authorisation/2022-11/schema.json should not contain breaking changes 1`] = `"0xb32bd6c7f8410c3786ebb2c2799c76612e66398243f0c41f5f63f6b9415d5f26"`;
-
-exports[`Schema schemas/ebsi-vid/legal-entity/2022-11/schema.json should not contain breaking changes 1`] = `"0x4d5bf5af4a3d44cee631b4343028a1dc8e77989325d9919f94867b8bc7443815"`;
-
-exports[`Schema schemas/ebsi-vid/natural-person/2022-11/schema.json should not contain breaking changes 1`] = `"0x0f41a1f4934e11f8f98e444ed34fb040645dcc04cead2ae28fca062eabfac181"`;
-
-exports[`Schema schemas/ebsi-vid/verifiable-authorisation/2022-11/schema.json should not contain breaking changes 1`] = `"0x50f076195a3f6285fb39a3307d289fd2e3cc3142e15775b9ca94519497067252"`;
-
-exports[`Schema schemas/type-extensions/credentialStatus/StatusList2021/2022-11_01/schema.json should not contain breaking changes 1`] = `"0x60d2b6a9a923dacfa6c2cb03d101b92c2b2683ed5e248ffa8fb414edbb6b9670"`;
-
-exports[`Schema schemas/type-extensions/termsOfUse/IssuanceCertificate/2022-11_01/schema.json should not contain breaking changes 1`] = `"0x1d7146f8897aa6cd5c59321ea0756ec61277028e4a8b3c13ec1b310ec47e6495"`;
+exports[`should match the snapshot 1`] = `
+[
+  {
+    "description": "Schema of an EBSI Verifiable Accreditation",
+    "file": "schemas/ebsi-accreditation/2022-11/schema.json",
+    "idBase16": "0xdb52cf04fcff98a32d004c5024b2d666f9b2474f3f0f2f65ec8bcca60d98bfbc",
+    "idBase58": "zFm9XHjq53HBZofmqVy4HM3dgi2uPYihFV2Rwgm4P8cTM",
+    "title": "EBSI Verifiable Accreditation Record",
+  },
+  {
+    "description": "Schema of an EBSI Verifiable Accreditation",
+    "file": "schemas/ebsi-accreditation/2022-11_01/schema.json",
+    "idBase16": "0x0ae2557fafdc17a87b015b5087db42d846d32c0ffbf8492860e956f7a73d5681",
+    "idBase58": "zjVFNvbEBPAr3a724DttioZpgZmNr75BBtRzZqk7pkDe",
+    "title": "EBSI Verifiable Accreditation Record",
+  },
+  {
+    "description": "Schema of an EBSI Accredited Verifiable Attestation",
+    "file": "schemas/ebsi-accredited-attestation/2022-11/schema.json",
+    "idBase16": "0xcb6d86ed17e50ebd1bf2b43af1af987d87c2ca19f7b519714b93764285b85631",
+    "idBase58": "zEh6dUiV9K2zE1LECqaPDVcRimnGMqNBQ7Lwa5KnwgUQQ",
+    "title": "EBSI Accredited Verifiable Attestation Record",
+  },
+  {
+    "description": "Schema of an EBSI Verifiable Attestation",
+    "file": "schemas/ebsi-attestation/2022-11/schema.json",
+    "idBase16": "0xeb6d8131264327f3cbc5ddba9c69cb9afd34732b3b787e4b3e3507a25d3079e9",
+    "idBase58": "zGr1f1vZz3bk4PDAsYjM3eA76eMGdZ4XiQysU2HJjadc4",
+    "title": "EBSI Verifiable Attestation",
+  },
+  {
+    "description": "Defines generic structure for any EBSI related Verifiable Credential",
+    "file": "schemas/ebsi-attestation/2022-11_01/schema.json",
+    "idBase16": "0x23039e6356ea6b703ce672e7cfac0b42765b150f63df78e2bd18ae785787f6a2",
+    "idBase58": "z3MgUFUkb722uq4x3dv5yAJmnNmzDFeK5UC8x83QoeLJM",
+    "title": "EBSI Verifiable Attestation",
+  },
+  {
+    "description": "Schema of an EBSI Verifiable Presentation",
+    "file": "schemas/ebsi-presentation/2022-11/schema.json",
+    "idBase16": "0xdacd5a6b1a92d5da622514b9c10cf208ccbc1ad7e1e7d9d80073d8416114024e",
+    "idBase58": "zFj7VdCiHdG4GB6fezdAUKhDEuxFR2bri2ihKLkiZYpE9",
+    "title": "EBSI Verifiable Presentation",
+  },
+  {
+    "description": "Schema of an EBSI StatusList2021 Verifiable Credential",
+    "file": "schemas/ebsi-revocation-statuslist/2022-11/schema.json",
+    "idBase16": "0xcf8bf7adfdd8cf67f4553fc1495b2e043cdfd54266f4417ac768e9a60acb6822",
+    "idBase58": "zEyBBXEhFvZP1UtfZSyuTiRAUmvitAVoLTfkat3mttr81",
+    "title": "EBSI StatusList2021 Credential",
+  },
+  {
+    "description": "Schema of an EBSI StatusList2021 Verifiable Credential",
+    "file": "schemas/ebsi-revocation-statuslist/2022-11_01/schema.json",
+    "idBase16": "0x4e94b5370f43581c19f6f51f043e00be528334f94769008c8013222dd257500b",
+    "idBase58": "z6HkKUAhWgMQqGQEcc1kewTWJrY4nrtadncmid7hsfGV8",
+    "title": "EBSI StatusList2021 Credential",
+  },
+  {
+    "description": "Schema of an EBSI Verifiable Authorisation Credential",
+    "file": "schemas/ebsi-verifiable-authorisation/2022-11/schema.json",
+    "idBase16": "0xb32bd6c7f8410c3786ebb2c2799c76612e66398243f0c41f5f63f6b9415d5f26",
+    "idBase58": "zD4QkTiwtyGvCtWozCFKivR7bZG9GTxgfSHvwyBbqQDr5",
+    "title": "EBSI Verifiable Authorisation Credential",
+  },
+  {
+    "description": "Schema for the PDA1",
+    "file": "schemas/ebsi-essp/pda1/2022-11/schema.json",
+    "idBase16": "0xe5e53f7bcebe95fc9576e27298de64bfacf592dd9be673eb6b8edbc4795ac96a",
+    "idBase58": "zGUR7RxCZtwQFSdwow63xF8hP2gMtH55incKsADwrcwzZ",
+    "title": "ESSP Portable Document A1",
+  },
+  {
+    "description": "Schema for the PDA1",
+    "file": "schemas/ebsi-essp/pda1/2022-11_01/schema.json",
+    "idBase16": "0x47c61667281cc3883cca001bcac7038237c85d0e8f61f139652375c330a99063",
+    "idBase58": "z5qB8tydkn3Xk3VXb15SJ9dAWW6wky1YEoVdGzudWzhcW",
+    "title": "ESSP Portable Document A1",
+  },
+  {
+    "description": "ESBI Education Verifiable Accreditation record schema for educational contexts",
+    "file": "schemas/ebsi-muti-uni-pilot/education-verifiable-accreditation-records/2022-11/schema.json",
+    "idBase16": "0x0b0e23cde1dad6e51f097998d749406a022e6e05cb995dd92cff9f150a4a6696",
+    "idBase58": "zk9zRVaib4jzJ33t5wDdQZMvGHx1qctx5CGGM9BQRVhf",
+    "title": "ESBI Education Verifiable Accreditation records",
+  },
+  {
+    "description": "Schema of an EBSI Verifiable ID for a natural person participating in the educational use cases ",
+    "file": "schemas/ebsi-muti-uni-pilot/verifiable-attestation-individual-id/2022-11/schema.json",
+    "idBase16": "0x6ff8cdf21b3969222e4a799d9605997b0f1de7d49edcde4ad0c09eb636dfaf3c",
+    "idBase58": "z8Y6JJnebU2UuQQNc2R8GYqkEiAMj3Hd861rQhsoNWxsM",
+    "title": "EBSI Natural Person Verifiable ID",
+  },
+  {
+    "description": "Schema of an EBSI Verifiable ID for an organization-legal entity participating in the educational use cases",
+    "file": "schemas/ebsi-muti-uni-pilot/verifiable-attestation-organisational-id/2022-11/schema.json",
+    "idBase16": "0x960904265eba56f0c3a171f19af2970d3c62eb0ed1cd7981065261f37f007101",
+    "idBase58": "zB6g8TmTxEPbEXab9Qg7guiPg8bJ1cxZsT2f3GpHASiGY",
+    "title": "EBSI Legal Entity Verifiable ID",
+  },
+  {
+    "description": "Schema for additional properties on credentialSubject to describe educational use cases - VAccreditation",
+    "file": "schemas/ebsi-muti-uni-pilot/verifiable-diploma/2022-11/schema.json",
+    "idBase16": "0x4dd3926cd92bb3cb64fa6c837539ed31fc30dd38a11266a91678efa7268cde09",
+    "idBase58": "z6EoWU6KYRjy7mR9VuKecgsNAuBkYGF3H94PdqgcEdQtp",
+    "title": "EBSI Verifiable Accredidation - Education Diploma credentialSubject schema",
+  },
+  {
+    "description": "Schema of an EBSI Verifiable ID for a legal entity",
+    "file": "schemas/ebsi-vid/legal-entity/2022-11/schema.json",
+    "idBase16": "0x4d5bf5af4a3d44cee631b4343028a1dc8e77989325d9919f94867b8bc7443815",
+    "idBase58": "z6Cyiu1faBdPzCGyytebrSuPThyarmbWZmxRHUmSe3Qqz",
+    "title": "EBSI Legal Entity Verifiable ID",
+  },
+  {
+    "description": "Schema of an EBSI Verifiable ID for a natural person",
+    "file": "schemas/ebsi-vid/natural-person/2022-11/schema.json",
+    "idBase16": "0x0f41a1f4934e11f8f98e444ed34fb040645dcc04cead2ae28fca062eabfac181",
+    "idBase58": "z22ZAMdQtNLwi51T2vdZXGGZaYyjrsuP1yzWyXZirCAHv",
+    "title": "EBSI Natural Person Verifiable ID",
+  },
+  {
+    "description": "Schema of an EBSI Verifiable Authorisation",
+    "file": "schemas/ebsi-vid/verifiable-authorisation/2022-11/schema.json",
+    "idBase16": "0x50f076195a3f6285fb39a3307d289fd2e3cc3142e15775b9ca94519497067252",
+    "idBase58": "z6SxHJQL5hPzbwyhio7fqKMioNdtG5ixfwMHFcUextDkV",
+    "title": "EBSI Verifiable Authorisation",
+  },
+  {
+    "description": "Defines revocation details for an issued Verifiable Credential",
+    "file": "schemas/type-extensions/credentialStatus/StatusList2021/2022-11_01/schema.json",
+    "idBase16": "0x60d2b6a9a923dacfa6c2cb03d101b92c2b2683ed5e248ffa8fb414edbb6b9670",
+    "idBase58": "z7WxViWAEwg9G3fadmM1k9YTtMq9QLkGgGMie86JMWajZ",
+    "title": "EBSI type extension for use of StatusList2021",
+  },
+  {
+    "description": "Defines accredited trust chain bindings for an issued Verifiable Credentials",
+    "file": "schemas/type-extensions/termsOfUse/IssuanceCertificate/2022-11_01/schema.json",
+    "idBase16": "0x1d7146f8897aa6cd5c59321ea0756ec61277028e4a8b3c13ec1b310ec47e6495",
+    "idBase58": "z2yw1Mq2Cq4jN8B2bJ66cGcFEqjrJQUinxHAUjZTkVKjz",
+    "title": "EBSI type extension for use of IssuanceCertificate",
+  },
+]
+`;

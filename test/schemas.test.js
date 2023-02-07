@@ -1,11 +1,14 @@
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import fs from "fs";
 import Ajv2020 from "ajv/dist/2020.js";
 import Ajv2019 from "ajv/dist/2019.js";
 import AjvDraft07 from "ajv";
 import addFormats from "ajv-formats";
 import $RefParser from "@apidevtools/json-schema-ref-parser";
 import { globbySync } from "globby";
+// eslint-disable-next-line import/extensions
+import { base58btc } from "multiformats/bases/base58";
 import { computeId } from "../cli/utils/jsonSchema.js";
 
 // Ignore list: these schemas are not valid ("strict": true, https://ajv.js.org/options.html#strict)
@@ -58,10 +61,26 @@ describe.each(schemas)("Schema %s", (schemaFile) => {
     // Should compile without errors
     expect(ajv.compile(bundledSchema)).not.toThrow();
   });
+});
 
-  test("should not contain breaking changes", async () => {
-    // If the schema ID changes, it means there is a breaking change
-    const id = await computeId(schemaFile);
-    expect(id).toMatchSnapshot();
-  });
+test("should match the snapshot", async () => {
+  const summary = await Promise.all(
+    schemas.map(async (schemaFile) => {
+      const idBase16 = await computeId(schemaFile);
+      const idBase58 = base58btc.encode(
+        Buffer.from(idBase16.replace("0x", ""), "hex")
+      );
+      const dataString = fs.readFileSync(schemaFile, "utf8");
+      const data = JSON.parse(dataString);
+
+      return {
+        title: data.title,
+        description: data.description,
+        idBase16,
+        idBase58,
+        file: schemaFile,
+      };
+    })
+  );
+  expect(summary).toMatchSnapshot();
 });
