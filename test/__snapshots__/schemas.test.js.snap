@@ -80,6 +80,13 @@ exports[`should match the snapshot 1`] = `
     "title": "ESSP Portable Document A1",
   },
   {
+    "description": "Schema of a certificate of trade mark registration",
+    "file": "schemas/ebsi-euipo/certificate-of-trademark-registration/2023-02/schema.json",
+    "idBase16": "0xd0d89a066f1e011d1f3bd21c01198d65b250b3cbe06954de71b9fce4c81d5f9a",
+    "idBase58": "zF4FN9zMwkHowbAVFSAzbPMmYauUCr8nn9Sg68gi9GMPP",
+    "title": "EUIPO - Certificate of Trade Mark Registration",
+  },
+  {
     "description": "ESBI Education Verifiable Accreditation record schema for educational contexts",
     "file": "schemas/ebsi-muti-uni-pilot/education-verifiable-accreditation-records/2022-11/schema.json",
     "idBase16": "0x0b0e23cde1dad6e51f097998d749406a022e6e05cb995dd92cff9f150a4a6696",
