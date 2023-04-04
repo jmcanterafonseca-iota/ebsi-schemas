@@ -17,6 +17,13 @@ exports[`should match the snapshot 1`] = `
     "title": "EBSI Verifiable Accreditation Record",
   },
   {
+    "description": "Schema of an EBSI Verifiable Accreditation",
+    "file": "schemas/ebsi-accreditation/2023-04/schema.json",
+    "idBase16": "0xbbdaf273ffe65d497cee8c1563b48fa2f468e073c77a8a6cbd6fca93ce665436",
+    "idBase58": "zDeJstYXMhqtDCocKhXbKMJSFJgChXeV7hqeRVNkLv1xh",
+    "title": "EBSI Verifiable Accreditation Record",
+  },
+  {
     "description": "Schema of an EBSI Accredited Verifiable Attestation",
     "file": "schemas/ebsi-accredited-attestation/2022-11/schema.json",
     "idBase16": "0xcb6d86ed17e50ebd1bf2b43af1af987d87c2ca19f7b519714b93764285b85631",

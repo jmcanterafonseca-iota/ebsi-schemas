@@ -4,6 +4,11 @@
 
 ## Changes
 
+### 2023-04
+
+- Add `reservedAttributeId` to define TIR attribute location for the credential
+- Mandatory `EbsiAccreditationEntry` revocation type to follow Trusted Registry state
+
 ### 2022-11_01
 
 - Use `extended types` to identify between accreditation to accredit and to attest
