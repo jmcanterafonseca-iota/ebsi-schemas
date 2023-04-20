@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AccreditationPolicy",
+  "description": "Defines the Accreditation Policy under which the Verifiable Credential has been issued",
+  "type": "object",
+  "properties": {
+    "termsOfUse": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/termsOfUse"
+        },
+        {
+          "type": "array",
+          "description": "One item must match the type extension",
+          "contains": {
+            "$ref": "#/$defs/termsOfUse"
+          }
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "termsOfUse": {
+      "description": "Defines the Accreditation Policy under which the Verifiable Credential has been issued",
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Type of the TermsOfUse entry. It MUST be AccreditationPolicy.",
+          "enum": ["AccreditationPolicy"]
+        },
+        "trustFramework": {
+          "type": "string",
+          "description": "Name of the Trust Framework (TF)."
+        },
+        "policyId": {
+          "type": "string",
+          "description": "URI or URL identifying the policy under which the Trust Framework operates or Verifiable Accreditation or Attestation has been Issued.",
+          "format": "uri"
+        },
+        "lib": {
+          "type": "string",
+          "description": "Legal basis for the tf, is a string as 'professional qualifications directive' or eIDAS. OPTIONAL.",
+          "format": "uri"
+        },
+        "parentAccreditation": {
+          "type": "string",
+          "description": "URL to access the parent entity in the trust chain supporting the attestation. REQUIRED.",
+          "format": "uri"
+        },
+        "rootAuthorisation": {
+          "type": "string",
+          "description": "URL to access the root entity in the trust chain supporting the attestation. REQUIRED.",
+          "format": "uri"
+        }
+      },
+      "required": ["type", "parentAccreditation", "rootAuthorisation"]
+    }
+  }
+}
