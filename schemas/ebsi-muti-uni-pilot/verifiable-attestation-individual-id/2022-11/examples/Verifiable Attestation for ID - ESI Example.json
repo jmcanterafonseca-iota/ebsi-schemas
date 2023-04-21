@@ -1,9 +1,5 @@
 {
-  "@context": [
-    "https://www.w3.org/2018/credentials/v1",
-    "https:/.europa.eu/schemas/v-id/2020/v1",
-    "https:/.europa.eu/schemas/eidas/2020/v1"
-  ],
+  "@context": ["https://www.w3.org/2018/credentials/v1"],
   "id": "ur:did:identity#1dee355d-0432-4910-ac9c-70d89e8d674e",
   "type": ["VerifiableCredential", "VerifiableAttestation"],
   "issuer": "did:ebsi:2757945549477fc571663bee12042873fe555b674bd294a3",
@@ -37,12 +33,5 @@
       "subjectPresence": "Physical",
       "documentPresence": ["Physical"]
     }
-  ],
-  "proof": {
-    "type": "EidasSeal2021",
-    "created": "2019-06-22T14:11:44Z",
-    "proofPurpose": "assertionMethod",
-    "verificationMethod": "did:ebsi:2757945549477fc571663bee12042873fe555b674bd294a3#2368332668",
-    "jws": "HG21J4fdlnBvBA+y6D...amP7O="
-  }
+  ]
 }
