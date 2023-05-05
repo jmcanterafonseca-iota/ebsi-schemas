@@ -150,11 +150,25 @@ exports[`should match the snapshot 1`] = `
     "title": "EBSI type extension for use of StatusList2021",
   },
   {
+    "description": "Defines the Accreditation Policy under which the Verifiable Credential has been issued",
+    "file": "schemas/type-extensions/termsOfUse/AccreditationPolicy/2023-04/schema.json",
+    "idBase16": "0xeae40291dc6c7dbf1a54cfd9270650997e33fc9fcb3e637f390c0b6916102bc1",
+    "idBase58": "zGov4ANWQ6CGwDt4P3k78uymkCM2y2tbapd7Jk3DPTeRn",
+    "title": "AccreditationPolicy",
+  },
+  {
     "description": "Defines accredited trust chain bindings for an issued Verifiable Credentials",
     "file": "schemas/type-extensions/termsOfUse/IssuanceCertificate/2022-11_01/schema.json",
     "idBase16": "0x1d7146f8897aa6cd5c59321ea0756ec61277028e4a8b3c13ec1b310ec47e6495",
     "idBase58": "z2yw1Mq2Cq4jN8B2bJ66cGcFEqjrJQUinxHAUjZTkVKjz",
     "title": "EBSI type extension for use of IssuanceCertificate",
+  },
+  {
+    "description": "Defines Trust Framework Policy under which the Verifiable Credential has been issued",
+    "file": "schemas/type-extensions/termsOfUse/TrustFrameworkPolicy/2023-04/schema.json",
+    "idBase16": "0xf3266840f47906803165259bf47c9195970e588ec473d7843ef33774df87d5aa",
+    "idBase58": "zHNA3DDeLjaF4WvBiStkNHriNUCvZw3AdnbzJkddTkDRs",
+    "title": "TrustFrameworkPolicy",
   },
 ]
 `;
