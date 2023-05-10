@@ -4,13 +4,6 @@ exports[`should match the snapshot 1`] = `
 [
   {
     "description": "Schema of an EBSI Verifiable Accreditation",
-    "file": "schemas/ebsi-accreditation/2022-11/schema.json",
-    "idBase16": "0xdb52cf04fcff98a32d004c5024b2d666f9b2474f3f0f2f65ec8bcca60d98bfbc",
-    "idBase58": "zFm9XHjq53HBZofmqVy4HM3dgi2uPYihFV2Rwgm4P8cTM",
-    "title": "EBSI Verifiable Accreditation Record",
-  },
-  {
-    "description": "Schema of an EBSI Verifiable Accreditation",
     "file": "schemas/ebsi-accreditation/2022-11_01/schema.json",
     "idBase16": "0x0ae2557fafdc17a87b015b5087db42d846d32c0ffbf8492860e956f7a73d5681",
     "idBase58": "zjVFNvbEBPAr3a724DttioZpgZmNr75BBtRzZqk7pkDe",
@@ -22,13 +15,6 @@ exports[`should match the snapshot 1`] = `
     "idBase16": "0xbbdaf273ffe65d497cee8c1563b48fa2f468e073c77a8a6cbd6fca93ce665436",
     "idBase58": "zDeJstYXMhqtDCocKhXbKMJSFJgChXeV7hqeRVNkLv1xh",
     "title": "EBSI Verifiable Accreditation Record",
-  },
-  {
-    "description": "Schema of an EBSI Accredited Verifiable Attestation",
-    "file": "schemas/ebsi-accredited-attestation/2022-11/schema.json",
-    "idBase16": "0xcb6d86ed17e50ebd1bf2b43af1af987d87c2ca19f7b519714b93764285b85631",
-    "idBase58": "zEh6dUiV9K2zE1LECqaPDVcRimnGMqNBQ7Lwa5KnwgUQQ",
-    "title": "EBSI Accredited Verifiable Attestation Record",
   },
   {
     "description": "Schema of an EBSI Verifiable Attestation",
@@ -43,6 +29,13 @@ exports[`should match the snapshot 1`] = `
     "idBase16": "0x23039e6356ea6b703ce672e7cfac0b42765b150f63df78e2bd18ae785787f6a2",
     "idBase58": "z3MgUFUkb722uq4x3dv5yAJmnNmzDFeK5UC8x83QoeLJM",
     "title": "EBSI Verifiable Attestation",
+  },
+  {
+    "description": "The Credential defines that the Conformance Testing was passed and qualified",
+    "file": "schemas/ebsi-ct-qualification/2023-05/schema.json",
+    "idBase16": "0x984d474dcb1cae085f71ccc4548d9431a429a506a821aab9285088129c0c9b61",
+    "idBase58": "zBFXKJdF5Rp3hy6j6mMvPri4xxEeLU8KxozLH8iGcGYBS",
+    "title": "EBSI Conformance Testing Qualification Credential",
   },
   {
     "description": "Schema of an EBSI Verifiable Presentation",

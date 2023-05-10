@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EBSI Conformance Testing Qualification Credential",
+  "description": "The Credential defines that the Conformance Testing was passed and qualified",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "../../ebsi-attestation/2022-11_01/schema.json"
+    },
+    {
+      "properties": {
+        "credentialSubject": {
+          "description": "Defines additional information about the subject",
+          "type": "object",
+          "properties": {
+            "version": {
+              "description": "Completed conformance testing version number in SemVer",
+              "type": "string"
+            }
+          },
+          "required": ["version"]
+        }
+      },
+      "required": ["credentialSubject"]
+    }
+  ]
+}
