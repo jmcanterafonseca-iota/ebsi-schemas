@@ -21,12 +21,12 @@
     "type": "CredentialStatusList2020"
   },
   "credentialSchema": {
-    "id": "https:/.europa.eu/tsr-vid/verifiableid1.json",
+    "id": "https://europa.eu/tsr-vid/verifiableid1.json",
     "type": "FullJsonSchemaValidator2021"
   },
   "evidence": [
     {
-      "id": "https:/.europa.eu/tsr-vid/evidence/f2aeec97-fc0d-42bf-8ca7-0548192d4231",
+      "id": "https://europa.eu/tsr-vid/evidence/f2aeec97-fc0d-42bf-8ca7-0548192d4231",
       "type": ["DocumentVerification"],
       "verifier": "did:ebsi:2e81454f76775c687694ee6772a17796436768a30e289555",
       "evidenceDocument": ["Passport"],
